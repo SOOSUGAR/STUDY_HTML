@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>색상 설정 속성</title>
+  <style>
+    #container {
+      width: 500px;
+    }
+    #container>div {
+      width: 200px; height: 50px; margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #container>div:nth-child(1) {background-color: royalblue;}
+    #container>div:nth-child(2) {background: seagreen;}
+    #container>div:nth-child(3) {background-color: mistyrose;}
+    #container>div:nth-child(4) {
+      background-color: seashell;
+      border-width: 3x-px; border-style: dashed; border-color: mediumvioletred;
+    }
+    #container>div:nth-child(5) { background-color: lemonchiffon; border: 5px double orangered;}
+    #container>div:nth-child(6) {
+      background-color: antiquewhite; border: 3px solid deeppink;
+      box-shadow: 10px 5px gray;
+      text-shadow: 1px 1px hotpink;
+    }
+  </style>
+</head>
+<!--
+  < 색상 설정 속성들 >
+  1. background-color 속성 : 배경색
+  - background : 배경과 관련된 여러 가지 속성을 한꺼번에 지정
+  2. color : 글자색
+  3. border-color : 테두리색
+  - border : 테두리와 관련된 여러 가지 속성을 한꺼번에 지정
+  - 굵기, 스타일 ,색상 3가지
+  4. shadow : 그림자색
+  - box-shadow : 박스 또는 이미지에 그림자 지정
+  - text-shadow : 텍스트에 그림자 지정
+  - 가로, 세로, 그림자색의 3가지 값을 차례대로 기재
+  - 가로 : +(오른쪽), -(왼쪽)
+  - 세로 : +(아래쪽), -(위쪽)
+
+-->
+<body>
+  <div id="container">
+    <div>조선 정신과 의사 유세풍</div>
+    <div>유세풍</div>
+    <div>서은우</div>
+    <div>계지한</div>
+    <div>만복</div>
+    <div>할망</div>
+  </div>
+</body>
+</html>

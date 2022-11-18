@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>목록 속성 1</title>
+  <style>
+    .u1 {
+      /* 각각 설정 */
+      /* list-style-type: circle;
+      list-style-position: inside; */
+
+      /* 한꺼번에 설정 */
+      list-style: square inside;
+    }
+
+    .u2 {
+      /* 각각 설정 */
+      /* list-style-image: url("images/header.PNG");
+      list-style-position: inside; */
+
+      /* 한꺼번에 설정 */
+      list-style: url("images/header.PNG") inside;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+  <!--
+    < 목록 속성 >
+    1. list-style-type : disc(기본값), square, circle, none
+    2. list-style-type : outside(기본값), inside
+    3. list-style-image : 이미지를 블릿으로 사용
+  -->
+<body>
+  <h2>웹 프로그래밍</h2>
+  <h3>선택 1</h3>
+  <ul class="u1">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Javascript</li>
+    <li>JQuery</li>
+  </ul>
+  <hr>
+  <h3>선택 2</h3>
+  <ul class="u2">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Javascript</li>
+    <li>JQuery</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>flex 2</title>
+  <style>
+    #container {
+      width: 600px;
+      margin: 20px auto; 
+      padding: 20px;
+      border: 1px solid black;
+      /* flex layout */
+      display: flex;
+    }
+    .box {
+      width: 100px; height: 100px;
+      background-color: lightblue;
+      border: 1px solid blue;
+      text-align: center;
+      line-height: 60px;
+    }
+    .b1 { order: 4; }
+    .b2 { order: 2; }
+    .b3 { order: 5; }
+    .b4 { order: 1; }
+    .b5 { order: 3; }
+
+    /* 6. 항목의 너비 변경 */
+    /* 컨테이너 공간에 대해 박스 요소의 크기를 2배로 늘리거나, 2배로 축소시키는 속성 */
+    .b5 { flex: 2 2 0; }
+  </style>
+</head>
+<!--
+ 5. order 속성
+ - 배치 순서를 변경하는 속성
+ - 기본값 : 0, 소스에 입력한 순서대로 배치
+ 6. flex 속성
+ - 항목의 너비를 컨테이너에 맞춰 늘릴지 줄일지 지정하는 속성
+ - flex-grow : 항목의 너비를 늘리는 속성, 2(2배)
+ - flex-shrink : 항목의 너비를 줄이는 속성, 2(2배)
+ - flex-basis : 항목의 기본 크기, flex-grow와 flex-shrink의 값을 사용하고, auto일 경우 항목의 너비값을 사용
+-->
+<body>
+  <div id="container">
+    <div class="box b1"><h2>BOX1</h2></div>
+    <div class="box b2"><h2>BOX2</h2></div>
+    <div class="box b3"><h2>BOX3</h2></div>
+    <div class="box b4"><h2>BOX4</h2></div>
+    <div class="box b5"><h2>BOX5</h2></div>
+  </div>
+</body>
+</html>

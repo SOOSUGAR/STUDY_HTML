@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>transform 1</title>
+  <style>
+    #container {
+      width: 700px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+    img { margin: 20px; }
+    .img1 { transform: scale(1.5); }
+    .img2 { transform: scale(0.7);}
+    .img3 { transform: scale(1.5, 0.5); }
+    .img4 { transform: scaleX(1.5);}
+    .img5 { transform: scaleY(1.5);}
+    .img6 { transform: rotate(180deg);}
+    .img7 { transform: rotate(-20deg);}
+    /* 왜곡 */
+    .img8 { transform: skew(10deg, 10deg);}
+    .img9 { transform: skew(-10deg, -10deg);}
+    .img10 { transform: skewX(10deg);}
+    .img11 { transform: skewX(-10edg);}
+    .img12 { transform: skewY(10deg);}
+    .img13 { transform: skewY(-10deg);}
+  </style>
+</head>
+<!--
+  <transform 속성 >
+  1. 변형, 변화 효과
+  - 박스의 위치, 크기, 형태 등을 2차원 또는 3차원으로 변형하는 효과
+  2. 크기(확대/축소), 회전, 이동, 왜곡
+-->
+<body>
+  <div id="container">
+    <div class="b1">
+      <img src="images/lamp.jpg" width="200" height="150" class="img1">
+      <img src="images/lamp.jpg" width="200" height="150" class="img2">
+      <img src="images/lamp.jpg" width="200" height="150" class="img3">
+      <img src="images/lamp.jpg" width="200" height="150" class="img4">
+      <img src="images/lamp.jpg" width="200" height="150" class="img5">
+      <img src="images/lamp.jpg" width="200" height="150" class="img6">
+      <img src="images/lamp.jpg" width="200" height="150" class="img7">
+      <br>
+      <img src="images/lamp.jpg" width="200" height="150" class="img8">
+      <img src="images/lamp.jpg" width="200" height="150" class="img9">
+      <img src="images/lamp.jpg" width="200" height="150" class="img10">
+      <img src="images/lamp.jpg" width="200" height="150" class="img11">
+      <br>
+      <img src="images/lamp.jpg" width="200" height="150" class="img12">
+      <img src="images/lamp.jpg" width="200" height="150" class="img13">
+      <br>
+  </div>
+</body>
+</html>

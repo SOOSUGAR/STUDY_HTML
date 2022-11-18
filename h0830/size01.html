@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>절대크기와 상대크기</title>
+  <style>
+    #parent { font-size: 48px; }
+    /* 절대크기 : child1, child2, 상대크기 : child3, child4 child5 */
+    #child1 { font-size: 20px; }
+    #child2 { font-size: 150%; }
+    #child3 { font-size: 80%; }
+    #child4 { font-size: 1.5em; }
+    #child5 { font-size: 0.8em; }
+    #child6 { font-size: 1.5rem;}
+  </style>
+</head>
+<!--
+  < 크기의 단위 >
+  - px(pixel) : 픽셀, 화소 단위, 일반적으로 가장 많이 사용
+  - pt(point) : 포인트
+  - in(inch) : 인치
+  - cm(centimeter) : 센치미터
+  - mm(millimeter) : 밀리미터 
+
+  < 절대크기와 상대크기 >
+  1. 웹문서의 글자 기본 크기 : 16px
+  2. 절대크기 : 정해진 수치 크기
+  - px, pt, in, cm, mm ...
+  3. 상대크기 : 기준이 되는 크기에 대한 상대적인 크기
+  - em. rem, % ...
+  - em : 현재 크기를 기준으로 상대 크기를 계산
+  - rem : root(최상위) 크기를 기준으로 상대 크기를 계산
+
+-->
+<body>
+  <div id="parent">
+    웹프로그래밍 0 (40px)<hr>
+    <div id="child1">웹프로그래밍 1 (20px)</div>
+    <div id="child2">웹프로그래밍 2 (60px)</div>
+    <div id="child3">웹프로그래밍 3 (32px)</div>
+    <div id="child4">웹프로그래밍 4 (60px)</div>
+    <div id="child5">웹프로그래밍 5 (0.8em, 32px)</div>
+    <div id="child6">웹프로그래밍 6 (1.5rem, 24px)</div>
+  </div>
+  <hr>
+  <div id="p1">
+    <div id="c1">HTML PROGRAMMING</div>
+  </div>
+  <hr>
+  <div id="p2">
+    <div id="c2">CSS PROGRAMMING</div>
+  </div>
+</body>
+</html>

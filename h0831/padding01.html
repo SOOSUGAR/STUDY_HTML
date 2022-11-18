@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>패딩</title>
+    <style>
+      div {
+        width: 100px;
+        border: 1px solid black;
+        margin: 10px;
+        background-color: purple;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .b1 {
+        /* 1. 각각 설정 */
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .b2 {
+        /* 2. 한꺼번에 설정 - 위, 오른쪽, 아래, 왼쪽 */
+        padding: 50px 30px 20px 40px;
+      }
+      .b3 {
+        /* 3. 한꺼번에 설정 - 위/아래 , 오른/왼쪽 */
+        padding: 50px 30px;
+      }
+      .b4 {
+        /* 4. 한꺼번에 설정 - 위/오른/아래 */
+        padding: 5px 30px 20px;
+      }
+      .b5 {
+        /* 5. 한꺼번에 설정 */
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <!--
+      # 패딩(padding) - 요소 내부에서 테두리와 내용 사이의 간격
+  -->
+  <body>
+    <h3>LINE1</h3>
+    <div class="b1">BOX1</div>
+    <div class="b2">BOX2</div>
+    <div class="b3">BOX3</div>
+    <div class="b4">BOX4</div>
+    <div class="b5">BOX5</div>
+    <h3>LINE2</h3>
+  </body>
+</html>

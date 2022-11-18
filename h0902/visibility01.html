@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>visibility 1</title>
+  <style>
+    img { width: 200px;}
+
+    .img2 { opacity: 0;}
+    .img5 { visibility: hidden;}
+    .img8 { display: none;}
+  </style>
+</head>
+<!--
+  < 박스의 가시성에 대한 속성 >
+  1. visibility: visible; -> 보임, 영역 있음, 기본값
+     visibility: hiddenl -> 보이지 않음, 영역 있음
+  2. opacity: 1; -> 보임, 영역 존재, 기본값
+     opacity:0; -> 사라짐, 영역 존재
+  3. display: block; -> 보임, 영역 존재
+     display: none; -> 사라짐, 영역 존재하지 않음
+-->
+<body>
+  <div class="b1">
+    <img src="images/pic1.jpg" class="img1">
+    <img src="images/pic2.jpg" class="img2">
+    <img src="images/pic3.jpg" class="img3">
+  </div>
+  <div class="b2">
+    <img src="images/pic1.jpg" class="img4">
+    <img src="images/pic2.jpg" class="img5">
+    <img src="images/pic3.jpg" class="img6">
+  </div>
+  <div class="b3">
+    <img src="images/pic1.jpg" class="img7">
+    <img src="images/pic2.jpg" class="img8">
+    <img src="images/pic3.jpg" class="img9">
+</body>
+</html>

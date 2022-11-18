@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>메뉴 3</title>
+  <style>
+    #container {
+      width: 800px;
+      padding: 10px;
+      margin: 30px auto;
+      text-align: center;
+      border: 1px solid gray;
+      font-size: 0.9rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    nav, div { margin: 0; }
+    .mm {
+      display: inline-block;
+      width: 80px; height: 20px;
+      padding: 5px 10px;
+      margin: 0;
+      border-bottom: 3px solid white;
+    }
+    .mm:hover { border-bottom: 3px solid red; }
+  </style>
+</head>
+<!--
+  # 박스의 유형을 활용한 메뉴 구성하기
+  3. 시멘틱 태그 사용
+-->
+<body>
+  <div id="container">
+    <header></header>
+    <nav>
+      <div class="menu1 mm"><a href="#">최고의</a></div>
+      <div class="menu1 mm"><a href="#">쇼핑찬스</a></div>
+      <div class="menu1 mm"><a href="#">한가위</a></div>
+      <div class="menu1 mm"><a href="#">빅세일</a></div>
+      <div class="menu1 mm"><a href="#">추천 라이프</a></div>
+      <div class="menu1 mm"><a href="#">제휴 이벤트</a></div>
+      <div class="menu1 mm"><a href="#">추천 이벤트</a></div>
+    </nav>
+  </div>
+</body>
+</html>

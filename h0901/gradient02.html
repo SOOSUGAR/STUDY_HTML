@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>그라디언트 2</title>
+  <style>
+    #container {
+      width: 800px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    .bb { display: inline-block;}
+    .bb>div {
+      width: 200px; height: 100px;
+      margin: 10px;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 100px;
+    }
+    .b1 { background: radial-gradient(red, yellow);}
+    .b2 { background: radial-gradient(red, yellow pink);}
+    .b3 { background: radial-gradient(red 20%, yellow 40%, green 60%);}
+    .b4 { background: radial-gradient(circle, red, yellow, green);}
+    .b5 { background: repeating-radial-gradient(red, yellow 10%, green 15%);}
+    .b6 { background: radial-gradient(red, yellow, green);}
+    .b7 { background: radial-gradient(farthest-corner at 70% 60%, red, yellow, green);}
+    .b8 { background: radial-gradient(farthest-side at 70% 60%, red, yellow, green);}
+    .b9 { background: radial-gradient(closest-corner at 70% 60%, red, yellow, green);}
+    .b10 { background: radial-gradient(closest-side at 70% 60%, red, yellow, green);}
+  </style>
+</head>
+<!--
+  2. radial-grdient() - 원점에서 동심원을 그리며 퍼져나가는 그라데이션을 생성하는 함수
+  - 박스의 모양을 기준으로 퍼져나가는 그라데이션
+  - circle : 정원을 기준으로 퍼져나가는 그라데이션
+  - farthest-corner : 그라데이션의 가장자리가 중심에서 가장 먼 코너에 닿도록 표현
+  - farthest-side : 그라데이션의 가장자리가 중심에서 가장 먼 사이드에 닿도록 표현
+  - closest-corner : 그라데이션의 가장자리가 중심에서 가장 가까운 코너에 닿도록 표현
+  - closest-side : 그라데이션의 가장자리가 중심에서 가장 가까운 사이드에 닿도록 표현
+-->
+<body>
+  <div id="container">
+    <div class="bb">
+      <div class="b1">BOX1</div>
+      <div class="b2">BOX1</div>
+      <div class="b3">BOX1</div>
+      <div class="b4">BOX1</div>
+      <div class="b5">BOX1</div>
+    </div>
+    <div class="bb">
+      <div class="b6">BOX6</div>
+      <div class="b7">BOX7</div>
+      <div class="b8">BOX8</div>
+      <div class="b9">BOX9</div>
+      <div class="b10">BOX10</div>
+    </div>
+  </div>
+</body>
+</html>

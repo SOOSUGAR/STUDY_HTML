@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>트랜지션 4</title>
+  <style>
+    .content>div {
+      float: left;
+      width: 100px;
+      height: 50px;
+      margin: 10px;
+      background-color: royalblue;
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 50px;
+      /* transition */
+      transition-property: height;
+      transition-duration: 3s;
+
+    }
+
+    /* transition 속도 설정 */
+    .b1 {
+      transition-timing-function: ease;
+    }
+
+    .b2 {
+      transition-timing-function: linear;
+    }
+
+    .b3 {
+      transition-timing-function: ease-in;
+    }
+
+    .b4 {
+      transition-timing-function: ease-out;
+    }
+
+    .b5 {
+      transition-timing-function: ease-in-out;
+    }
+
+    .content:hover>div {
+      height: 500px;
+    }
+  </style>
+</head>
+<!-- 
+  # transition-timing-function 속성
+    1. ease - 시작과 끝은 느린 속도로 진행되고 중간은 빠른 속도로 진행
+    2. linear - 처음부터 끝까지 일정한 속도로 진행
+    3. ease-in - 느리게 시작 
+    4. ease-out - 느리게 끝냄
+    5. ease-in-out - 느리게 시작하고 느리게 끝냄
+ -->
+<body>
+  <div class="content">
+    <div class="b1">ease</div>
+    <div class="b2">linear</div>
+    <div class="b3">ease-in</div>
+    <div class="b4">ease-out</div>
+    <div class="b5">ease-in-out</div>
+  </div>
+</body>
+
+</html>

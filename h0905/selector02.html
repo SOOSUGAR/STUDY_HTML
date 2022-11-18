@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>선택자 2</title>
+    <style>
+      #container { width: 800px; margin: 0 auto;}
+      ul li {
+        display: inline-block ;
+        margin: 10px;
+      }
+      ul li a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+      }
+
+      /* 속성 선택자 */
+      a[href] { background-color: yellow;}
+
+      a[target = '_blank'] { color: red;}
+
+      [class = "core_menu"] { text-decoration: underline;}
+
+      [class ~= "menu"] {color: deeppink;}
+
+    </style>
+  </head>
+  <!-- 
+    < 2. 속성 선택자 정리 >
+      
+    1. [속성] - 지정한 속성에 스타일 적용
+    2. [속성 ='값'] - 특정 값을 갖는 속성에 스타일 적용
+    3. [속성 ~= '값'] - 여러 값들 중에서 특정 값이 있는 속성에 스타일 적용
+
+   -->
+  <body>
+    <div id="container">
+      <h2>HTML5 표준인 사이트</h2>
+      <ul>
+        <li><a href="http://www.w3c.org/html" target="_self">HTML</a></li>
+        <li><a href="http://www.w3c.org/css" target="_blank">CSS</a></li>
+        <li><a href="http://developer.mozilla.org">JavaScript</a></li>
+      </ul>
+      <ul>
+        <li><a>메인 메뉴 :</a></li>
+        <li><a href="#" class="sub menu">하위 메뉴 1</a></li>
+        <li><a href="#" class="core_menu">하위 메뉴 2</a></li>
+        <li><a href="#" class="pure menu">하위 메뉴 3</a></li>
+        <li><a href="#" class="core_menu">하위 메뉴 4</a></li>
+        <li><a href="#" class="core menus">하위 메뉴 5</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

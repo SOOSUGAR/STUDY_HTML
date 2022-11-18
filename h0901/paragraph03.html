@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>문단 3</title>
+  <style>
+    #container {
+      text-align: justify;
+
+      /* column-width: 200px; */
+      column-count: 3;
+      column-gap: 2rem;
+      column-rule: 2px dotted deeppink;
+    }
+    #t1 { break-before: column;}
+    #t2, #t3 { column-span: all; }
+  </style>
+</head>
+<!--
+  < 다단 설정 >
+  1. column-width : 단의 너비, 너비에 따라 단의 개수가 결정
+  2. column-count : 단의 개수, 개수에 따라 단의 너비가 결정
+  3. column-gap : 단 사이의 간격
+  4. column-rule : 단의 구분선, 굵기, 스타일, 색상을 차례대로 적어줌
+  5. break-before : column; 새로운 단으로 나눔
+  6. column-span : all; 단을 합침
+-->
+<body>
+  <div id="container">
+    <div id="t3">
+      <h3>HTML5 프로그래밍</h3>
+      <h5>제목1</h5>
+      <p class="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit perspiciatis nostrum a velit modi, inventore facilis natus provident fugiat, incidunt explicabo possimus porro. Similique itaque ratione cumque est, in cum?
+      </p>
+    </div>
+    <h5 id="t1">제목2</h5>
+    <p class="p2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus inventore asperiores ipsum nisi expedita, assumenda esse repellendus molestias consectetur magnam. At doloremque tenetur, cumque ad suscipit sapiente error nesciunt asperiores.
+    </p>
+    <h5>제목3</h5>
+    <p class="p3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eaque, nulla laborum quo iure, perferendis alias officia animi repellat optio, sit laudantium quia dolore inventore cum. Consequatur mollitia iste eum.
+    </p>
+    <h5>제목4</h5>
+    <p class="p4">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, maiores. Exercitationem, id atque. Odio, quidem, culpa eum eligendi praesentium iste totam, distinctio temporibus nobis harum soluta aspernatur! Quam, eos quo.
+    </p>
+    <div id="t2">
+      <h5>제목5</h5>
+      <p class="p5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae earum placeat, delectus eius quia nisi libero sequi minima tempore officiis enim porro dolores, ipsam, obcaecati eaque voluptatum voluptatem cupiditate?
+      </p>
+    </div>
+  </div>
+</body>
+</html>

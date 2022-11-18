@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>입력태그 12</title>
+</head>
+<!--
+  16. 수치 입력 태그
+  - 필드 오른쪽 끝에 증가/감소를 1씩 조절 할 수 있는 버튼이 나타남
+  - 숫자가 아닌 문자는 입력 불가
+  - value : 초기값, max : 최대값, min : 최솟값, step : 증감값
+  - 숫자 버튼을  사용할 때만 위의 설정값이 작동
+  - 직접 입력하면 설정값이 무효화
+  17. range 태그 : 수치의 범위 선택 태그
+  - value 초기값, max : 최대값, min : 최소값, step : 증감값
+  18. color 입력 필드 : 색상 선택 태그
+  - value : 초기값
+-->
+<body>
+  <fieldset>
+    <legend>수치 입력필드</legend>
+    나이 : <input type="number" name="no" id="no" value="10" max="20" min="0" step="2">
+    시험 성적 : <input type="range" name="range" id="range" value="80" max="100" min="0" step="5"><br>
+    색상 선택 : <input type="color" name="color" id="color" value="#ff0000">
+  </fieldset>
+</body>
+</html>

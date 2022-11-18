@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 2번 - 외부 선언 방식 */
+    /* @import url("css/css01.css"); */
+
+    /* 1번 - 내부 선언 방식 */
+    h1 { color: blue;}
+
+
+  </style>
+  <!-- 2-2번 - 외부 선언 방식 -->
+  <link rel="stylesheet" href="css/css01.css">
+</head>
+<!--
+  < CSS >
+  - Cascade Style Sheet
+  - 태그에 대한 속성 적용이 아래로 흐르는 폭포수처럼 적용됨, 위치가 중요
+  - HTML : 웹의 형태
+  - CSS 역할 : 웹을 장식, 배치
+
+  < CSS를 적용하는 방법 >
+  1. 인라인(Inline) 방식
+  - 태그 안에 속성으로 css를 적용하는 방식 
+  - 필요할 때 가끔 사용되는 방식, 권장하지 않음
+  - 장점 : 태그 안에 바로 속성을 설정함
+  - 단점 : 코드가 복잡해지며 관리가 어려움
+  2. 내부 선언 방식
+  - style 태그 안에 css를 작성하는 방식
+  - 장점 : 즉각 확인 가능
+  - 단점 : 코드가 길어지면 관리가 어려움
+  3. 외부 선언 방식
+  - css 내용을 별개의 파일로 저장하여 링크하는 방식 
+  - 1) style 안에서 import하는 방법, 2) link 태그를 사용하는 방법
+  - 실무에서 많이 사용하는 방식
+-->
+<body>
+  <h1>HTML5 프로그래밍</h1>
+  <h3 style="color: red;"> 이제부터는 CSS를 공부합니다.</h3>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam corporis, incidunt ea velit numquam ipsa, itaque repudiandae illum, libero maiores aut similique nesciunt vero. Nihil perspiciatis vero quisquam repellendus cum?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam temporibus error nesciunt magni rem quaerat obcaecati laborum voluptatem necessitatibus asperiores molestias impedit, unde, iure beatae. Unde neque laudantium ipsum.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis atque praesentium nesciunt iure, officiis earum, voluptatibus dignissimos fuga alias aut a expedita. Cupiditate, modi consequatur. Reiciendis rem vel officiis earum.
+  </p>
+</body>
+</html>

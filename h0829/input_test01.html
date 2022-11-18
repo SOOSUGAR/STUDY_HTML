@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원정보 입력</title>
+  <style>
+    #container {
+      width: 600px;
+      margin: 0 auto;
+    }
+    h2 { text-align: center; }
+    .f1 label { width: 100px; display: inline-block; }
+  </style>
+</head>
+<!--
+  < 입력태그 확인학습 문제 >
+  문제 1)
+  - 국적 : 내국인(대한민국), 외국인(유학생), 외국인(근로자), 외국인(이민자)
+  - 취득 자격증 : 정보처리기사, 정보처리산업기사, OCJP, OCP
+-->
+<body>
+  <div id="container">
+    <h2>회원 정보</h2>
+    <hr>
+     <form action="">
+      <fieldset class="f1">
+        <legend>인적사항</legend>
+        <label for="name">이름 : </label><input type="text" name="name" id="name" placeholder="ID 입력요망" size="25"><br>
+        <label for="id1">주민번호 : </label><input type="text" name="id1" id="id1" size="10">-<input type="text" name="id2" id="id2" size="10"><br>
+        <label for="country">국적 : </label>
+        <select name="country" id="country">
+          <option value="p1">내국인(대한민국)</option>
+          <option value="p2">외국인(유학생)</option>
+          <option value="p3">외국인(근로자)</option>
+          <option value="p4">외국인(이민자)</option>
+        </select><br>
+        <label for="">취득 자격증 : </label>
+        <select name="license" id="license">
+          <option value="l1">정보처리기사</option>
+          <option value="l2">정보처리산업기사</option>
+          <option value="l3">OCJP</option>
+          <option value="l4">OCP</option>
+        </select>
+      </fieldset><br>
+      <fieldset>
+        <legend>성별 & 학년</legend>
+        성별 : <input type="radio" name="gender" id="male" value="male"><label for="male">남성</label>
+        성별 : <input type="radio" name="gender" id="female" value="female"><label for="female">여성</label>
+        학년 :
+        <input type="radio" name="year" id="y1" value="1"><label for="1">1학년</label>
+        <input type="radio" name="year" id="y2" value="2" checked><label for="2">2학년</label>
+        <input type="radio" name="year" id="y3" value="3"><label for="3">3학년</label>
+        <input type="radio" name="year" id="y4" value="4"><label for="4">4학년</label>
+      </fieldset>
+      <fieldset>
+        <legend>취미</legend>
+        <input type="checkbox" name="hobby" id="h1" value="reading"><label for="h1">독서</label>
+        <input type="checkbox" name="hobby" id="h2" value="go"><label for="h1">바둑</label>
+        <input type="checkbox" name="hobby" id="h3" value="golf"><label for="h2">골프</label>
+        <input type="checkbox" name="hobby" id="h4" value="climbing"><label for="h3">등산</label>
+        <input type="checkbox" name="hobby" id="h5" value="trvel"><label for="h4">여행</label>
+        <input type="checkbox" name="hobby" id="h6" value="etc"><label for="h5">기타</label>
+      </fieldset>
+      <fieldset>
+        <legend>메모사항</legend>
+        <textarea name="memo" id="memo" cols="90" rows="5" placeholder="메모글을 남겨 주세요".></textarea>
+      </fieldset>
+      
+      첨부 서류 : <input type="file" name="file" id="file">
+      <hr>
+      <input type="submit" value="저장하기">
+      <input type="reset" value="다시 입력하기">
+    </form>
+</div>
+</body>
+</html>

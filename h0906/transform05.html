@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>transform 5</title>
+  <style>
+    .container {
+      width: 200px; height: 200px;
+      border: 1px solid black;
+      margin: 100px;
+      perspective: 300px;
+    }
+    .box { 
+      height: 200px;
+      background-color: royalblue;
+      transform: rotateY(135deg);
+    }
+    .b1 { backface-visibility: hidden;}
+    .b2 { backface-visibility: visible;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box b1"><h1>BACK</h1></div>
+  </div>
+  <div class="container">
+    <div class="box b2"><h1>BACK</h1></div>
+  </div>
+</body>
+</html>

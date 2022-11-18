@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>visibility 2</title>
+  <style>
+    .answer { visibility: hidden;}
+    .result:hover .answer { visibility: visible;}
+
+    .img1 { 
+      width: 200px; height: 200px;
+      background: url("images/4.png"); 
+      border-radius: 50%; 
+    }
+    .img1:hover { background-image: url("images/pic1.jpg");}
+  </style>
+</head>
+<!--
+
+-->
+<body>
+  <h3>문제 : 우리 나라의 남쪽 끝에 위치한 섬의 이름은 무엇인가요?</h3>
+  <h3 class="result">정답 : <span class="answer">마라도</span></h3>
+  <hr>
+  <div class="b1">
+    <div class="img1"></div>
+  </div>
+</body>
+</html>

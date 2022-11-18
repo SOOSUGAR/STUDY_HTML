@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>스타일 오버로딩</title>
+  <style>
+    h1, h2, h5 { background-color: skyblue; }
+  </style>
+  <style>
+    @import url(css/css02.css);
+  </style>
+  <style>
+    h1, div { background-color: red; }
+    h3 { background-color: gray; }
+  </style>
+</head>
+<!--
+  < 인라인, 내부, 외부 스타일 적용 규칙 >
+  1. 인라인은 항상 먼저 적용, 인라인 > 내부, 외부
+  2. 내부와 외부에서는 나중에 적은 것이 최종적으로 적용
+  3. 스타일 오버로딩 - 나중에 적은 속성이 최종적으로 적용되는 방식
+-->
+<body>
+  <h1>HTML5 프로그래밍(h1)</h1>
+  <h1 style="background-color: black;">HTML5 프로그래밍(h1)</h1>
+  <h2>HTML5 프로그래밍(h2)</h2>
+  <h2>HTML5 프로그래밍(h2)</h2>
+  <div><h3>HTML5 프로그래밍(h3)</h3></div>
+  <pre><h3>HTML5 프로그래밍(h3)</h3></pre>
+  <h4>HTML5 프로그래밍(h4)</h4>
+  <h5>HTML5 프로그래밍(h5)</h5>
+</body>
+</html>

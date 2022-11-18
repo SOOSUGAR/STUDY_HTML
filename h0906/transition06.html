@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>트랜지션 6</title>
+  <style>
+    #container {
+      width: 700px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .box {
+      width: 100px; height: 100px;
+      background-color: lightgray;
+      margin: 50px 10px;
+    }
+    .b1 {
+      border: 2px solid blue;
+      /* 지연시간 없음 */
+      transition: all 3s;
+    }
+    .b2 {
+      border: 2px solid red;
+      /* 지연시간 1초 */
+      transition: all 3s 1s;
+    }
+    #container:hover .box {
+      margin-left: 400px;
+      transform: rotate(720deg);
+    }
+  </style>
+</head>
+<!--
+
+
+-->
+<body>
+  <div id="container">
+    <div class="box b1"></div>
+    <div class="box b2"></div>
+  </div>
+</body>
+</html>

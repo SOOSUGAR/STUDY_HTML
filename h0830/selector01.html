@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>속성 선택자 1</title>
+  <style>
+    label { display: inline-block; width: 100px; }
+    input[type="password"] { background-color: darkgray; }
+    input:required { background-color: gold; }
+    input:read-only { background-color: pink; }
+    input:disabled { background-color: red; }
+    input[autofocus] { background-color: skyblue; }
+
+  </style>
+</head>
+<!--
+  < 속성 선택자 >
+  - 태그명[속성값=값]으로 사용
+  - 속성이 가상 클래스로 정의되어 있다면 태그명:속성명으로 사용 가능
+
+-->
+<body>
+  <h1>속성 선택자</h1>
+  <fieldset>
+    <legend>학생 정보</legend>
+    <label for="part">학과</label><input type="text" name="part" id="part" required><br>
+    <label for="name">이름</label><input type="text" name="name" id="name" autofocus><br>
+    <label for="major1">주전공</label><input type="text" name="major1" id="major2" required><br>
+    <label for="major2">부전공</label><input type="text" name="major2" id="major2"><br>
+    <label for="major3">자율전공</label><input type="text" name="major3" id="major3" disabled><br>
+    <label for="group1">동아리1</label><input type="text" name="group1" id="group1" required><br>
+    <label for="group2">동아리2</label><input type="text" name="group2" id="group2"><br>
+    <label for="license">취득자격증</label><input type="text" name="license" id="license" readonly value="정보처리기사"><br>
+    <label for="service">봉사활동</label><input type="text" name="service" id="service" required><br>
+    <label for="pwd">비밀번호</label><input type="text" name="pwd" id="pwd"><br>
+  </fieldset>
+</body>
+</html>

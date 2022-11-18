@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>절대크기와 상태크기 2</title>
+  <style>
+    table {
+      width: 700px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr { height: 100px; }
+    td {
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    #tr1 > td:nth-child(1) {font-size: 8px;}
+    #tr1 > td:nth-child(2) {font-size: 16px;}
+    #tr1 > td:nth-child(3) {font-size: 32px;}
+    #tr1 > td:nth-child(4) {font-size: 64px;}
+
+    #tr2 > td:nth-child(1) {font-size: 50%;}
+    #tr2 > td:nth-child(2) {font-size: 100%;}
+    #tr2 > td:nth-child(3) {font-size: 200%;}
+    #tr2 > td:nth-child(4) {font-size: 400%;}
+    
+    #tr3 > td:nth-child(1) {font-size: 0.5em;}
+    #tr3 > td:nth-child(2) {font-size: 1em;}
+    #tr3 > td:nth-child(3) {font-size: 2em;}
+    #tr3 > td:nth-child(4) {font-size: 4em;}
+
+    #tr4 > td:nth-child(1) {font-size: 0.5rem;}
+    #tr4 > td:nth-child(2) {font-size: 1rem;}
+    #tr4 > td:nth-child(3) {font-size: 2rem;}
+    #tr4 > td:nth-child(4) {font-size: 4rem;}
+
+    #tr5 > td:nth-child(1) {font-size: xx-small;}
+    #tr5 > td:nth-child(2) {font-size: x-small;}
+    #tr5 > td:nth-child(3) {font-size: small;}
+    #tr5 > td:nth-child(4) {font-size: medium;}
+    #tr5 > td:nth-child(1) {font-size: large;}
+    #tr5 > td:nth-child(2) {font-size: x-large;}
+    #tr5 > td:nth-child(3) {font-size: xx-large;}
+  </style>
+</head>
+<!--
+  # 키워드로 정의한 크기
+  xx-large > x-large > large > medium > small > x-small > xx-small
+  medium : 16px, xx-large : 32px, xx-small : 8px
+
+-->
+<body>
+  <h1>절대크기와 상대크기</h1>
+    <h3>1. 절대크기(px)</h3>
+    <table>
+      <tr>
+        <td>8px</td>
+        <td>16px</td>
+        <td>32px</td>
+        <td>64px</td>
+      </tr>
+      <tr id="tr1">
+        <td>A가8</td>
+        <td>A가8</td>
+        <td>A가8</td>
+        <td>A가8</td>
+      </tr>
+    </table>
+    <h3>2. 상대크기(%)</h3>
+    <table>
+      <tr>
+        <td>50%</td>
+        <td>100%</td>
+        <td>200%</td>
+        <td>400%</td>
+      </tr>
+      <tr id="tr2">
+        <td>A가8</td>
+        <td>A가8</td>
+        <td>A가8</td>
+        <td>A가8</td>
+      </tr>
+    </table>
+  </table>
+  <h3>3. 상대크기(em)</h3>
+  <table>
+    <tr>
+      <td>0.5em</td>
+      <td>1em</td>
+      <td>2em</td>
+      <td>4em</td>
+    </tr>
+    <tr id="tr3">
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+    </tr>
+  </table>
+  <h3>4. 상대크기(rem)</h3>
+  <table>
+    <tr>
+      <td>0.5rem</td>
+      <td>1rem</td>
+      <td>2rem</td>
+      <td>4rem</td>
+    </tr>
+    <tr id="tr4">
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+    </tr>
+  </table>
+  <h3>5. 상대크기(키워드)</h3>
+  <table>
+    <tr>
+      <td>xx-small</td>
+      <td>x-small</td>
+      <td>small</td>
+      <td>medium</td>
+      <td>large</td>
+      <td>x-large</td>
+      <td>xx-large</td>
+    </tr>
+    <tr id="tr5">
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+      <td>A가8</td>
+    </tr>
+  </table>
+</body>
+</html>

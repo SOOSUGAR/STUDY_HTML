@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>transform 2</title>
+  <style>
+    #container {
+      width: 600px; height: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid black;
+    }
+    img { margin: 0 20px;}
+    .img1 { transform: translate(20px, 40px);} /* x, y 방향 이동 */
+    .img2 { transform: translate(20px);} /* x 방향 이동 */
+    .img3 { transform: translateX(20px);}
+    .img4 { transform: translateY(20px);}
+  </style>
+</head>
+<!--
+
+-->
+<body>
+  <div id="container">
+    <img src="images/pic1.jpg" class="img1"><br>
+    <img src="images/pic1.jpg" class="img2"><br>
+    <img src="images/pic1.jpg" class="img3"><br>
+    <img src="images/pic1.jpg" class="img4"><br>
+  </div>
+</body>
+</html>

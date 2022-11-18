@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>선택자 6</title>
+  <style>
+    /* :root {color : darkolivegreen} */
+    /* body { color : darkcyan} */
+    /* * {color : darkolivegreen;} */
+
+    table {
+      width: 200px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    tr {height: 40px;}
+    td, th {
+      border : 1px solid black;
+      padding: 10px;
+    }
+
+    tr:nth-child(1) { color: blue;}
+    tr:nth-child(2n) { background-color: rgb(255, 242, 121);}
+    tr:nth-child(2n+1) { background-color: rgb(255, 233, 237);}
+    tr:first-child {font-weight: bold;}
+    tr:last-child{font-style: italic;}
+    th:only-child{ text-decoration: underline;}
+
+    p:nth-of-type(2) { border: 1px dotted red;}
+    p:first-of-type { color : seagreen; font-weight: bold ;}
+    p:last-of-type { color: mediumvioletred; font-weight: bold ;}
+  </style>
+</head>
+<!-- 
+  3. 웹 구조와 관련된 가상 클래스 선택자
+    :root - 문서 전체에 스타일 적용, html 태그에 적용한 것과 같은 결과 (css3부터 적용)
+
+    (1) 자식과 관련한 가상 클래스
+      :nth-child(n) - 자식 요소 중 특정 위치 요소에 스타일 적용
+        +) 홀수 : 2n+1 / 2n-1 / odd , 짝수 : 2n / even
+      :first-child - 첫번째 자식 요소에 스타일 적용
+      :last-child - 마지막 자식 요소에 스타일 적용
+      :only-child - 유일한 자식 요소일 때 스타일 적용
+    
+    (2) 특정 태그의 위치와 관련한 가상 클래스
+      - 같은 형제끼리의 순서를 따짐
+      :nth-of-type(n) - 특정 태그 중에서 n번째 요소에 스타일 적용
+      :first-of-type - 특정 캐그 중 첫번째 요소에 스타일 적용
+      :last-of-type - 특정 캐그 중 마지막 요소에 스타일 적용
+      :only-of-type - 전체에서 해당 요소가 오직 하나일 때 스타일 적용
+
+    
+
+ -->
+<body>
+  <h1>html 프로그래밍</h1>
+  <p>css를 공부하고 있습니다.</p>
+  <ul>
+    css 구성요소
+    <li>기본 속성</li>
+    <li>아이디와 클래스</li>
+    <li>선택자</li>
+    <li>애니메이션</li>
+  </ul>
+  <hr>
+  <h1>건강에 좋은 식품</h1>
+  <p>건강에 좋은 음식 10가지를 소개합니다.</p>
+  <p>자주 섭취하면 건강이 좋아집니다.</p>
+  <table>
+    <tr><td>블루베리</td></tr>
+    <tr><td>귀리</td></tr>
+    <tr><td>토마토</td></tr>
+    <tr><td>시금치</td></tr>
+    <tr><td>적포도주</td></tr>
+    <tr><th>밥이 보약</th></tr>
+    <tr><th>치킨도 좋아</th></tr>
+    <tr><td>견과류</td></tr>
+    <tr><td>브로콜리</td></tr>
+    <tr><td>연어</td></tr>
+    <tr><td>마늘</td></tr>
+    <tr><td>녹차</td></tr>
+  </table>
+  <p>여러 가지 프로그래밍</p>
+  <hr>
+  <div class="p_tags">
+    <p>CSS 프로그래밍 </p>
+    <p>JavaScript 프로그래밍</p>
+    <p>JQuery 프로그래밍</p>
+    <p>프레임워크 프로그래밍</p>
+  </div>
+</body>
+</html>

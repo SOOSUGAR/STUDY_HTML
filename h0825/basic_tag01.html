@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+
+-->
+<html lang="ko"> <!-- -->
+<head> <!-- html 문서의 여러가지 설정사항을 적는 곳 -->
+<meta charset="UTF-8">
+<title>html 기본 태크</title>
+<style></style> <!-- CSS 설정 -->
+<script></script> <!-- Javascript를 작성하는 곳-->
+</head>
+
+
+<!-- 
+< 1. 텍스트와 문단 태그 >
+태그는 줄바꿈의 여부에 따라 1가지 유형으로 구분
+- 1) 블럭(block) 태그 : 줄바꿈을 하는 태그
+- 2) 인라인(inline) 태그 : 줄바꿈을 하지 않는 태그
+
+< 1-1. 블럭 태그 >
+- 자주 사용하는 태그 : hn, p, br, hr
+1. hn 태그 : 제목 h1 ~ h6, header, 굵게 글씨, h1 > h6 순으로 큼
+2. p 태그 : 문단(단락), paragraph, 일반적인 문단의 텍스트 
+3. br 태그 : 줄바꿈, 단독 태그, line break
+4. hr 태그 : 수평선, 단독 태크, horizontal line
+5. pre 태그 : 태그에 쓰는 대로 화면에 출력, 들여쓰기와 속성, 글자크기를 줄여서 출력, preformat, 필요에 따라 사용
+6. blockquote 태그 : 인용문에 사용, 필요에 따라 사용
+
+< 1-2. 인라인 태그 >
+1. strong 태그, b 태그 : 글자를 굵게 표시, bold
+- 화면낭독기 기능에서의 차이점 : strong 태그는 강조해서 낭독하는 태그
+2. em 태그, i 태그 : 글자를 기울임꼴로 표시, enophasis, italic
+- 화면낭독기 기능에서의 차이점 : em 태그는 강조해서 낭독하는 태그
+3. q 태그 : 인용문, 쌍따옴표로 싸서 표시, quotation
+4. mark 태그 : 강조 태그, 노란 형광색으로 표시
+5. span 태그 : 줄바꿈없이 영역을 묶어서 한꺼번에 처리할 때 많이 사용하는 태그
+6. small 태그 : 주변 글자보다 작게 표시하는 태그
+7. sup 태그 : 위 첨자 표시, super subscript
+8. sub 태그 : 아래 첨자 표시, subscript
+9. s 태그 : 취소선, 가운데선을 표시, strikethough
+10. u 태그 : 밑줄을 표시, underline
+11. ruby, rt 태그 : 동아시아 문자 표기
+
+-->
+
+<body>
+  <!-- 실제 작업 내용을 적는 곳 -->
+  <h1>HTML5 프로그래밍</h1>
+  <h2>HTML5 프로그래밍</h2>
+  <h3>HTML5 프로그래밍</h3>
+  <h4>HTML5 프로그래밍</h4>
+  <h5>HTML5 프로그래밍</h5>
+  <h6>HTML5 프로그래밍</h6>
+  HTML6 프로그래밍
+  CSS 속성 작성
+  <p>
+    HTML은 웹문서를 작성하는 표준언어입니다.<br>
+    <hr>
+    CSS는 HTML 문서의 속성을 설정합니다.
+  </p>
+  <pre>
+    HTMP은 웹문서를
+    작성하는
+    표준언어입니다.
+  </pre>
+  <blockquote>
+    이전의 HTML들은 내용구성과 다양한 출력방법을 모두 지원했지만,
+    HTML5에서는 이를 분리해서 웹문서의 출력은 CSS3에서 지원하고,
+    HTML에서는 내용의 의미표현 기능을 중심으로 지원하고 있다.
+  </blockquote>
+  <hr>
+  HTML은 <strong>웹문서</strong>를 작성하는 <b>표준언어</b>입니다.<br>
+  HTML은 <em>웹문서</em>를 작성하는 <i>표준언어</i>입니다.<br>
+  <q>No Sweat, No Sweet</q><br>
+  HTML은 <span style="color:blueviolet">웹문서</span>를 작성하는 <mark>표준언어</mark>입니다.<br>
+  <p>가격 : 13,000원 <small>(부가세 별도)</small></p>
+  <p>질량등가의 법칙 : E = mc<sup>2</sup></p>
+  <p>물의 화학식 : H<sub>2</sub>O</p>
+  <p>할인가격 : <s>10,000원</s> -> <u>5,000원</u> 할인판매</p>
+  <p><ruby>대한민국<rt>대한민국</rt></ruby></p>
+
+</body>
+</html>

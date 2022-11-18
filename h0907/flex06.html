@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>flex 6</title>
+  <style>
+    .wrapper {
+      width: 500px; height: 150px;
+      margin: 0 auto;
+      border: 2px solid black;
+
+      /* flex */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* 10. */
+    .w1 { align-content: stretch;}
+    .w2 { align-content: flex-start;}
+    .w3 { align-content: flex-end; }
+    .w4 { align-content: center; }
+    .w5 { align-content: space-between; }
+    .w6 { align-content: space-between;}
+
+    .box { 
+      width: 100px;
+      border: 2px solid black;
+      background-color: limegreen;
+    }
+
+  </style>
+</head>
+<!--
+  10. align-content 속성
+  - 항목이 여러 줄에 걸쳐서 나타날 때, 교차축에 대한 배치 방법을 설정하는 속성
+  - stretch : 교차축을 채워 늘리는 배치
+  - flex-start : 교차축의 시작점을 기준으로 배치
+  - flex-end : 교차축의 끝지점을 기준으로 배치
+  - center : 교차축의 가운데를 기준으로 배치
+  - space-between : 교차축의 시작점과 끝지점에 첫 항목과 마지막 항목을 배치하고, 나머지 항목은 균등하게 배치
+  - space-around : 각 항목에 대해서 남는 공간을 균등하게 배치하는 방법
+-->
+<body>
+  <div class="wrapper w1">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+    <div class="box b4"><p>BOX4</p></div>
+    <div class="box b5"><p>BOX5</p></div>
+  </div>
+  <div class="wrapper w2">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+    <div class="box b4"><p>BOX4</p></div>
+    <div class="box b5"><p>BOX5</p></div>
+  </div>
+  <div class="wrapper w3">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+    <div class="box b4"><p>BOX4</p></div>
+    <div class="box b5"><p>BOX5</p></div>
+  </div>
+  <div class="wrapper w4">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+    <div class="box b4"><p>BOX4</p></div>
+    <div class="box b5"><p>BOX5</p></div>
+  </div>
+  <div class="wrapper w5">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+    <div class="box b4"><p>BOX4</p></div>
+    <div class="box b5"><p>BOX5</p></div>
+  </div>
+  <div class="wrapper w6">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+    <div class="box b4"><p>BOX4</p></div>
+    <div class="box b5"><p>BOX5</p></div>
+  </div>
+</body>
+</html>

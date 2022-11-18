@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>float 테스트 4</title>
+  <style>
+    /* 전체 */
+    #container {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid black;
+    }
+    #container>div {
+      border: 1px solid black;
+    }
+    /* 타이틀 */
+    .header {
+      width: 96%;
+      text-align: center;
+      padding: 20px;
+    }
+    /* 메뉴 */
+    .menu { 
+      text-align: center;
+      padding: 10px;
+    }
+    .menu a { text-decoration: none; color: black;}
+    .m_menu { 
+      display: inline-block; width: 18%; height: 20px; 
+      padding: 10px 5px; margin: auto -3px;
+      border: 1px solid #383838;
+      background-color: #c8c8c8;
+      /* 배치 */
+      position: relative;
+    }
+    .s_menu {
+      width: 94%; height: 20px; padding: 10px 5px;
+      border: 1px solid #a0a0a0;
+      background-color: lightyellow;
+      margin-left: -6px;
+      display: none;
+      /* 배치 */
+      position: absolute;
+    }
+    .m_menu:hover .s_menu {
+      display: block;
+    }
+    .ss1 { margin-top: 10px;}
+    .ss1 { top: 40; }
+    .ss2 { top: 80; }
+    .ss3 { top: 120;}
+    .ss4 { top: 160;}
+    /* 본문 */
+    .section1 { 
+      float: left; width: 64%;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    /* 보조 내용 */
+    .section2 {
+      float: right; width: 300px;
+      padding: 10px;
+    }
+    li {
+      padding: 10px;
+    }
+    /* 푸터 */
+    .footer {
+      clear: both; width: 96%;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="header">
+      <h1>쇼핑몰 타이틀</h1>
+    </div>
+    <div class="menu">
+      <div class="m_menu"><a href="#">메인메뉴1</a>
+        <div class="s_menu ss1"><a href="#">서브메뉴1-1</a></div>
+        <div class="s_menu ss2"><a href="#">서브메뉴1-2</a></div>
+        <div class="s_menu ss3"><a href="#">서브메뉴1-3</a></div>
+        <div class="s_menu ss4"><a href="#">서브메뉴1-4</a></div>
+      </div>
+      <div class="m_menu"><a href="#">메인메뉴2</a>
+        <div class="s_menu ss1"><a href="#">서브메뉴2-1</a></div>
+        <div class="s_menu ss2"><a href="#">서브메뉴2-2</a></div>
+        <div class="s_menu ss3"><a href="#">서브메뉴2-3</a></div>
+        <div class="s_menu ss4"><a href="#">서브메뉴2-4</a></div>
+      </div>
+      <div class="m_menu"><a href="#">메인메뉴3</a>
+        <div class="s_menu ss1"><a href="#">서브메뉴3-1</a></div>
+        <div class="s_menu ss2"><a href="#">서브메뉴3-2</a></div>
+        <div class="s_menu ss3"><a href="#">서브메뉴3-3</a></div>
+        <div class="s_menu ss4"><a href="#">서브메뉴3-4</a></div>
+      </div>
+      <div class="m_menu"><a href="#">메인메뉴4</a>
+        <div class="s_menu ss1"><a href="#">서브메뉴4-1</a></div>
+        <div class="s_menu ss2"><a href="#">서브메뉴4-2</a></div>
+        <div class="s_menu ss3"><a href="#">서브메뉴4-3</a></div>
+        <div class="s_menu ss4"><a href="#">서브메뉴4-4</a></div>
+      </div>
+      <div class="m_menu"><a href="#">메인메뉴5</a>
+        <div class="s_menu ss1"><a href="#">서브메뉴5-1</a></div>
+        <div class="s_menu ss2"><a href="#">서브메뉴5-2</a></div>
+        <div class="s_menu ss3"><a href="#">서브메뉴5-3</a></div>
+        <div class="s_menu ss4"><a href="#">서브메뉴5-4</a></div>
+      </div>
+    </div>
+    <div class="section1">
+      <h2>본문</h2>
+      <p>설레는 바이며, 군영과 그들의 있는가? 이상의 열매를 못할 인간에 불어 그들은 봄바람이다. 살 돋고, 무엇을 풀이 사막이다. 반짝이는 두기 천고에 않는 그들에게 위하여, 우리의 얼음에 아름다우냐? 이것을 그들에게 고행을 살 가장 열락의 대고, 밥을 예수는 칼이다. 새가 오아이스도 불러 생의 하여도 가슴에 청춘의 힘있다. 하는 무엇을 관현악이며, 청춘 없으면 용감하고 아름답고 석가는 역사를 사막이다. 그들의 광야에서 피가 속에서 같이, 무엇을 끝에 같으며, 듣기만 말이다.</p>
+      <p>고행을 얼마나 힘차게 그림자는 인간의 간에 청춘 미묘한 아니다. 창공에 트고, 인간의 쓸쓸한 평화스러운 풀이 사막이다. 구하기 이는 웅대한 싶이 할지니, 것이다. 같은 별과 산야에 피다. 피고, 그것을 얼마나 기관과 찬미를 우는 웅대한 있는 위하여서 부패뿐이다. 보내는 그들은 열락의 없는 보라. 이상의 곳이 튼튼하며, 역사를 것이다.</p>
+    </div>
+    <div class="section2">
+      <h2>보조 내용</h2>
+      <li>어디 인생에 들어 목숨이 무엇을 웅대한 이것을 있으며, 봄바람이다. 천하를 것이다.보라, 열락의 착목한는 피어나는 만물은 그리하였는가?</li>
+      <li>곳으로 원대하고, 할지니, 하는 끓는 교향악이다. 낙원을 따뜻한 산야에 든 꽃이 이것을 힘있다.</li>
+    </div>
+    <div class="footer">
+      <h2>푸터</h2>
+      <p>저작권 정보</p>
+      <p>연락처 등</p>
+    </div>
+  </div>
+</body>
+</html>

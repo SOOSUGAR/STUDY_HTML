@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>transform 4</title>
+  <style>
+    .box {
+      display: inline-block;
+      width: 150px; height: 180px;
+      border: 1px solid black;
+      margin: 20px;
+    }
+    .img1 { transform: rotateX(50deg); }
+    .img2 { transform: rotateX(50deg); }
+    .b2 { perspective: 300px; } /* 원근감 */
+  </style>
+</head>
+<!--
+  # perspective 속성 - 원근감을 주는 속성
+-->
+<body>
+  <div class="box b1">
+    <img src="images/sunset.jpg" width="150px" height="180px" class="img1">
+  </div>
+  <div class="box b2">
+    <img src="images/sunset.jpg" width="150px" height="180px" class="img2">
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 선택자 1</title>
+  <style>
+    h3 { background-color: skyblue; }
+    #s1 { background-color: pink; }
+    li#s2 { color: red; }
+    li { background-color: orange; }
+  </style>
+</head>
+<!--
+  < CSS 선택지 >
+  - css를 적용할 때 사용하는 이름
+  - 태그(tag)
+  - 아이디(id) : 태그에 id를 붙여서 스타일을 적용한 것, 스타일에서 #를 붙여서 사용
+  - 아이디는 스타일 오버로딩과 상관없이 태그보다 우선적으로 적용
+
+-->
+<body>
+  <h3>HTML5 프로그래밍</h3>
+  <ul>
+    <li>HTML5</li>
+    <li id="s1">CSS3</li>
+    <li>Javascript</li>
+    <li id="s2">JQuery</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>float 속성 2</title>
+  <style>
+    .left { width: 100px; float: left;}
+    .right { width: 100px; float: right;}
+
+    .b1 { background-color: yellowgreen; height: 100px;}
+    .b2 { background-color: orange; height: 200px;}
+    .b3 { background-color: skyblue; height: 100px;}
+    .b4 { background-color: gold; height: 120px;}
+    .b5 { background-color: silver; height: 180px;} 
+    .b6 { background-color: aquamarine; height: 130px;}
+    .b7 { 
+      background-color: beige; 
+      border: 1px dashed black; height: 70px;
+      clear: both;
+    }
+  </style>
+</head>
+<!--
+  # float 속성 
+  - left : 화면의 왼쪽으로 배치,
+  - right : 화면의 오른쪽으로 배치
+  - none : 기본값
+
+  # clear 속성
+  - left : float의 left로 지정한 속성을 삭제
+  - right : float의 right로 지정한 속성을 삭제
+  - both : float의 left와 right 속성을 모두 삭제
+-->
+<body>
+  <div class="box b1 left">BOX1</div>
+  <div class="box b2 left">BOX2</div>
+  <div class="box b3 left">BOX3</div>
+  <div class="box b4 right">BOX4</div>
+  <div class="box b5 right">BOX5</div>
+  <div class="box b6 right">BOX6</div>
+  <div class="b7">BOX7</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>선택자 5</title>
+  <style>
+    #container { width: 800px; margin: 0 auto;}
+    h2 { text-align: center;}
+    fieldset { padding: 20px; margin: 20px 0;}
+    .f1 label { display: inline-block; width: 60px; margin-left: 10px; margin-bottom: 10px;}
+
+    input:read-only {background-color: lightgray;}
+    input:checked + label { color :coral}
+  </style>
+</head>
+<!-- 
+  2. 화면 요소와 관련된 가상 클래스
+   - 태그의 속성과 관련된 가상 클래스
+   - :read-only : readonly 속성과 관련된 가상 클래스
+   - :checked : checkbox의 체크 여부와 관련된 가상 클래스
+ -->
+<body>
+  <div id="container">
+
+  <h2>2학기 수강 과목 선택</h2>
+  <fieldset class="f1">
+    <legend>사용자 정보</legend>
+    <label for="sno">학번 </label><input type="text" name="sno" id="sno" value="20001234" readonly><br>
+    <label for="sname">이름 </label><input type="text" name="sname" id="sname" value="홍길동" readonly>
+  </fieldset>
+  <fieldset>
+    <legend>신청 과목</legend>
+    <input type="checkbox" name="subject1" id="subject1"><label for="subject1">JAVA</label>&ensp;
+    <input type="checkbox" name="subject2" id="subject2"><label for="subject2">JavaScript</label>&ensp;
+    <input type="checkbox" name="subject3" id="subject3"><label for="subject3">Oracle</label>&ensp;
+    <input type="checkbox" name="subject4" id="subject4"><label for="subject4">JSP</label>&ensp;
+  </fieldset>
+ </div>
+</body>
+</html>

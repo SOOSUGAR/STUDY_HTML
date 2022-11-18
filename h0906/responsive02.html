@@ -1,0 +1,115 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>responsive 2</title>
+  <style>
+    /* 1. 고정 레이아웃 */
+    /* #container {
+      width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      width: 960px; height: 120px;
+      background-color: royalblue;
+    }
+    header h1 {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      line-height: 120px;
+    }
+    section {
+      float: left;
+      width: 600px; height: 400px;
+      padding: 15px;
+      background-color: orange;
+    }
+    aside {
+      float: right;
+      width: 300px; height: 400px;
+      padding: 15px;
+      background-color: seagreen;
+    }
+    footer {
+      clear: both;
+      height: 120px;
+      color: white;
+      background-color: brown;
+      text-align: center;
+      line-height: 120px;
+    } */
+
+    /* 2. 가변 레이아웃 */
+    #container {
+      width: 96%;
+      margin: 0 auto;
+    }
+    header {
+      width: 100%; height: 120px;
+      background-color: royalblue;
+    }
+    header h1 { 
+      font-size: 2em;
+      text-align: center; 
+      color: white;
+      line-height: 120px;
+    }
+    section h3, aside h3, footer h3 {
+      font-size: 1.5em;
+    }
+    section {
+      float: left;
+      width: 62.5%; height: 400px;
+      padding: 1.5625%;
+      background-color: orange;
+    }
+    section img {
+      /* 가변 이미지 */
+      max-width: 100%; height: auto;
+    }
+    aside {
+      float: right;
+      width: 31.25%; height: 400px;
+      padding: 1.5625%;
+      background-color: seagreen;
+    }
+    footer {
+      clear: both; 
+      width: 100%; height: 120px;
+      background-color: brown;
+      color: white;
+      text-align: center;
+      line-height: 120px;
+    }
+
+  </style>
+</head>
+<!--
+  1. 고정 레이아웃 - 고정된 크기를 가지는 레이아웃
+  2. 가변 레이아웃 - 가변적인 크기를 가지는 레이아웃
+
+  < 가변 크기를 계산하는 방법 >
+  (요소의 너비 / 요소를 감싸는 전체의 너비) * 100
+  section : (600 / 960) * 100 = 62.5%
+  aside   : (300 / 960) * 100 = 31.25%
+  padding : (15 / 960) * 100 = 1.5625%
+  h1      : (40 / 960) * 100 = 4.17%
+-->
+<body>
+  <div id="container">
+    <header>
+      <h1>고정/가변 레이아웃</h1>
+    </header>
+    <section>
+      <h3>본문</h3>
+      <img src="images/fireworks.png">
+    </section>
+    <aside>
+      <h3>사이드바</h3>
+    </aside>
+    <footer>
+      <h3>푸터</h3>
+    </footer>
+  </div>
+</body>
+</html>

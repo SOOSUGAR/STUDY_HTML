@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>레이아웃 1</title>
+  <style>
+    .wrapper {
+      width: 300px; height: 200px;
+      margin: 0 10px;
+      border: 2px dashed black;
+    }
+    div { width: 150px; height: 50px; }
+
+    .b1 {background-color: gray;}
+    .b2 {background-color: red;}
+    .b3 {background-color: green;}
+    .b4 {background-color: blue;}
+    .b5 {background-color: orange;}
+
+    .wrapper {
+      /* position: static; */
+      position: absolute;
+      top: 30px;
+    }
+  </style>
+</head>
+<!--
+ < 레이아웃, 배치 방법 >
+  1. 절대 배치와 상대 배치
+  (1) static : 기본값, 왼쪽에서 오른쪽으로, 위에서 아래로 배치하는 기본적인 배치 방법
+  (2) absolute : 상위의 요소 중에서 가까운 요소를 기준으로 배치하는 방법
+  - top, bottom, left, right 속성을 사용하여 위치를 지정
+  (3) relative : 기존 요소에서 상대적 기준으로 배치하는 방법
+  - top, bottom, left, right 속성을 사용하여 위치를 지정
+  (4) fixed : 화면 전체를 기준으로 배치하는 방법
+-->
+<body>
+  <div class="b1">BOX1</div>
+  <div class="wrapper">
+    <div class="b2">BOX2</div>
+    <div class="b3">BOX3</div>
+    <div class="b4">BOX4</div>
+  </div>
+  <div class="b5">BOX5</div>
+</body>
+</html>

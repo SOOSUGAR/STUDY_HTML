@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>animation 5</title>
+  <style>
+    .box {
+      width: 200px; height: 200px;
+      margin: 100px;
+    }
+    .b1 {
+      animation: change_box 5s 1s infinite ease-in;
+      animation-direction: alternate;
+    }
+
+    @keyframes change_box {
+      from {
+        background-color: blue;
+        border: 2px solid black;
+      }
+      to {
+        background-color: red;
+        border: 2px dotted magenta;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+<!--
+  # animation-direction 속성
+  - normal : 기본값, from에서 to로, 반복할 땐 다시 from에서 to로
+  - reverse : to에서 from으로, 반복할 때에도 동일
+  - alternate : from에서 to로, 바로 to에서 from으로 반복
+  - alternate-reverse : to에서 from으로, 바로 from에서 to로 반복
+-->
+<body>
+  <div class="box b1"></div>
+</body>
+</html>

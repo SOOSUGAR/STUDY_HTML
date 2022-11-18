@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>입력태그 10</title>
+</head>
+<!--
+  11. email 입력 필드
+  - @를 입력하지 않으면, '이메일에 @을 포함해 주세요.'라는 경고 메시지가 뜨는 입력 필드
+  12. url 입력 필드
+  - http:// 또는 url: 으로 시작하지 않으면 'url을 입력하세요.'라는 메시지가 뜨는 입력 필든
+  13. tel 입력 필드
+  - 별도로 체크하는 부분이 없음
+  14. search 입력 필드
+  - 텍스트를 입력하면 x표시가 나타나며, 표시로 입력한 내용을 한 번에 삭제 가능
+-->
+<body>
+  <form action="" method="post">
+    <fieldset>
+      <legend>이메일 입력필드</legend>
+      이름 : <input type="text" name="name" id="id"><br>
+      이메일 : <input type="email" name="email" id="email">
+    </fieldset>
+    <fieldset>
+      <legend>URL 입력필드</legend>
+      웹주소 : <input type="url" name="url" id="url">
+    </fieldset><br>
+    <fieldset>
+      <legend>전화번호 입력필드</legend>
+      <input type="tel" name="tel" id="tel">
+    </fieldset><br>
+    <fieldset>
+      <legend>검색어 입력필드</legend>
+      <input type="search" name="search" id="search"> 
+    </fieldset>
+  </form>
+</body>
+</html>

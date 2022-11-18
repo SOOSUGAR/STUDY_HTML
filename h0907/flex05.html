@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>flex 5</title>
+  <style>
+    .wrapper {
+      width: 500px; height: 100px;
+      margin: 0 auto;
+      border:  2px solid black;
+
+      /* flex */
+      display: flex;
+      align-items: center;
+    }
+    /* 9. */
+    .b1 { align-self: flex-start; }
+    .b3 { align-self: flex-end; }
+    .box {
+      width: 100px;
+      border: 2px solid black;
+      background-color: magenta;
+    }
+    .box p { text-align: center; color: white;}
+  </style>
+</head>
+<!--
+  9. align-self 속성
+  - 항목 개별적으로 교차축에 대한 배치를 하는 속성
+  - align-items와 같은 속성을 가짐
+  - auto : 항목의 부모 속성을 그대로 사용
+  - stretch :
+  - flex-start :
+  - flex-end :
+  - center :
+  - baseline :
+-->
+<body>
+  <div class="wrapper">
+    <div class="box b1"><p>BOX1</p></div>
+    <div class="box b2"><p>BOX2</p></div>
+    <div class="box b3"><p>BOX3</p></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>트랜지션 7</title>
+  <style>
+    #container {
+      width: 600px; height: 600px;
+      margin: 0 auto;
+      padding: 50px;
+      border: 1px solid black;
+    }
+    .b1 {
+      width: 200px; height: 200px;
+      background-color: red;
+      border: 1px solid black;
+      margin: 30px 60px;
+      /* transition */
+      transition: all 2s ease-in;
+    }
+    .b2 {
+      width: 100px; height: 100px;
+      margin: 200px 60px;
+      background-color: blue;
+      border: 1px solid black;
+      /* transition */
+      transition: all 3s ease-out;
+    }
+    .b1:hover { 
+      width: 100px; height: 100px;
+      background-color: yellow;
+      transform: rotate(225deg);
+     }
+     .b2:hover {
+      transform: scale(2) rotate(135deg);
+      background-color: skyblue;
+     }
+  </style>
+</head>
+<!--
+
+-->
+<body>
+  <div id="container">
+    <div class="b1"></div>
+    <div class="b2"></div>
+  </div>
+</body>
+</html>

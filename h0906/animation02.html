@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>animation 2</title>
+  <style>
+    .box {
+      width: 100px; height: 100px;
+      border: 3px solid black;
+      margin: 30px;
+      background-color: gray;
+    }
+    .b1{
+      animation-name: box1;
+      animation-duration: 10s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+    .b2 {
+      animation-name: box2;
+      animation-duration: 10s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+    .b3 {
+      animation-name: box3;
+      animation-duration: 10s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+    .b4 {
+      animation-name: box4;
+      animation-duration: 10s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes box1 {
+      from { background-color: blue; border-color: blue; } 
+      50% { background-color: skyblue; border-color: skyblue; }
+    }
+    @keyframes box2 {
+      50% { border-radius: 50%; }
+    }
+    @keyframes box3 {
+      50% { transform: rotate(45deg);}
+    }
+    @keyframes box4 {
+      50% { transform: scale(1.5);}
+    }
+  </style>
+</head>
+<!--
+  문제)
+  b1 -> 배경색과 테두리가 blue에서 skyblue로 바뀌는 애니메이션 효과
+  b2 -> 정사각형에서 정원으로 바뀌는 애니메이션 효과 적용
+  b3 -> 시계방향으로 45도 회전하는 애니메이션 효과
+  b4 -> 가로/세로 크기가 1.5배 커지는 애니메이션 효과
+-->
+<body>
+  <div class="box b1"></div>
+  <div class="box b2"></div> 
+  <div class="box b3"></div> 
+  <div class="box b4"></div> 
+</body>
+</html>

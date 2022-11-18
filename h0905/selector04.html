@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>선택자 4</title>
+  <style>
+    #container {width: 800px; margin: 0 auto;}
+    h2, .m_menu { text-align: center;}
+    .m_menu a { 
+      text-decoration: none;
+    }
+    .s_menu {
+      display: inline-block; 
+      width: 120px;
+      height: 20px;
+      padding: 10px; 
+      margin: 10px;
+      border: 1px solid gray;
+    }
+
+    .m_menu a:link { color:orange;}
+    .m_menu a:visited {color: deeppink;}
+    .m_menu .s_menu:hover { background-color: hotpink;}
+    .m_menu .s_menu:hover a { color: white; font-weight: bold;}
+    .s_menu:active {background-color: mediumpurple;}
+    .s_menu>a:focus {background-color: purple; font-weight: bold;}
+
+  </style>
+</head>
+<!-- 
+  < 3. 가상 클래스와 가상 요소 선택자 >
+
+  1. 사용자 동작에 반응하는 가상 클래스 (웹 기능을 사용할 때)
+    - :link : 아직 방문하지 않은 링크에 스타일 적용
+    - :visited : 방문한 링크에 스타일 적용
+    - :hover : 마우스 커서를 올려놓았을 때 스타일 적용
+    - :active : 활성화하였을 때 스타일 적용
+    - :focus : 초점이 맞추어졌을 때 스타일 적용
+
+ -->
+<body>
+  <div id="container">
+    <h2>펜션 이용 안내</h2>
+    <div class="m_menu">
+      <div class="s_menu sm1"><a href="#">이용 안내</a></div>
+      <div class="s_menu sm2"><a href="#">객실 소개</a></div>
+      <div class="s_menu sm3"><a href="#">예약 방법</a></div>
+      <div class="s_menu sm4"><a href="#">예약 하기</a></div>
+    </div>
+  </div>
+</body>
+</html>

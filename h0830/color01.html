@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>색상 1</title>
+  <style>
+    #container {
+      width: 500px;
+    }
+    #container>div {
+      width: 200px; height: 500px; margin: 10px;
+      border: 1px solid black;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    #container>div:nth-child(1) {background-color: salmon;}
+    #container>div:nth-child(2) {background-color: seagreen;}
+    #container>div:nth-child(3) {background-color: #4861b4;}
+    #container>div:nth-child(4) {background-color: #1e90ff;}
+    #container>div:nth-child(5) {background-color: rgb(255, 0, 0)}
+    #container>div:nth-child(6) {background-color: rgb(0, 0, 255)}
+    #container>div:nth-child(7) {background-color: rgba(74, 0, 130, 1)}
+  </style>
+</head>
+<!--
+  < 색상 표현법 >
+  1. 키워드로 정의
+  - 총 141개 정의, 기본 17색 + 124색
+  ex) red, blue, green, yellow, orange, pink ...
+  2. 색상을 조합하여 표현하는 방법
+  - #기호로 시작, 16진수 2자리씩을 RGB로 조합하여 생성, 00 ~ FF
+  - 16진수 00 ~ FF, 10진수 0 ~ 255, 256개의 색상이 3가지, 256의 3승 = 16777216개
+  - #FF0000 : red, #00FF00 : green, #0000FF : blue
+  - #000000 : black, #FFFFFF : white
+  - RGB에 해당하는 2자리가 같을 때는 1자리로 표현 가능
+  - #F00 : red, #000 : black
+  3. 색상을 조합하여 표현하는 방법
+  - rgb() 함수를 사용, RGB를 0~255 사이의 값으로 조합하여 사용
+  4. 색상을 조합하여 표현하는 방법
+  - rgba() 함수를 사용, RGB를 0~255 값으로 조합하여 사용
+  - RGB 색상에 추가적으로 투명도를 설정할 수 있음
+  - a : 투명도, alpha 값, 1 : 불투명, 0 : 투명, 0.5 : 반투명
+
+-->
+<body>
+  <div id="container">
+    <div>salmon</div>
+    <div>seagreen</div>
+    <div>#4681b4 (stealblue)</div>
+    <div>#1E90FF (dodgerblue)</div>
+    <div>rgb(255, 0, 0)</div>
+    <div>rgb(0, 0, 255</div>
+    <div>rgba(74, 0, 130, 1) (Indigo)</div>
+    <div></div>
+  </div>
+</body>
+</html>

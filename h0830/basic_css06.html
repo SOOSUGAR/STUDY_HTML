@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가상 클래스와 가상 요소 2</title>
+  <style>
+    table {
+      width: 300px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr { height: 50px;}
+    tr:nth-child(2n) {background-color: skyblue; }
+    tr:nth-child(2n+1) {background-color: pink;}
+    tr:nth-child(3n) {color: red;}
+    th { border: 1px solid black;}
+  </style>
+</head>
+<!--
+  # 가상 클래스의 활용
+  1. nth-child() : 해당하는 태그에서 n번째 요소를 서낵
+  - 홀수 : 2n+1(odd), 짝수 : 2n(even)
+  - 3의 배수 : 3n ...
+
+-->
+<body>
+  <h1>건강에 좋은 음식</h1>
+  <table>
+    <tr><th>브로콜리</th></tr>
+    <tr><th>사과</th></tr>
+    <tr><th>아몬드</th></tr>
+    <tr><th>연어</th></tr>
+    <tr><th>블루베리</th></tr>
+    <tr><th>시금치</th></tr>
+    <tr><th>귀리</th></tr>
+    <tr><th>고구마</th></tr>
+    <tr><th>아보카도</th></tr>
+    <tr><th>토마토</th></tr>
+  </table>
+</body>
+</html>

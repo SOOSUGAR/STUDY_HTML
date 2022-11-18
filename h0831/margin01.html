@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>마진</title>
+  <style>
+    h3 {
+      background-color: gray;
+      color: white;
+    }
+    div {
+      width: 150px; height: 50px;
+      background-color: orange;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .b1 {
+      /* 1. 각각 설정 */
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .b2 {
+      /* 2. 한꺼번에 설정 - 위 오른쪽 아래 왼쪽 (시계방향) */
+      margin: 50px 30px 30px 80px;
+    }
+    .b3 {
+      /* 3. 한꺼번에 설정 - 위/아래, 왼쪽/오른쪽 값이 같을 때 */
+      margin: 40px 20px;
+    }
+    .b4 {
+      /* 4. 한꺼번에 설정 - 위, 오른, 아래 / 왼쪽은 오른쪽과 같은 값을 사용 */
+      margin: 50px 40px 30px;
+    }
+    .b5{
+      /* 5. 한꺼번에 설정 - 1개의 값 */
+      margin: 30px;
+    }
+  </style>
+</head>
+<!--
+  # 마친(margin) - 요소와 요소 사이의 간격
+-->
+<body>
+  <h3>LINE1</h3>
+  <div class="b1">box1</div>
+  <div class="b2">box2</div>
+  <div class="b3">box3</div>
+  <div class="b4">box4</div>
+  <div class="b5">box5</div>
+  <h3>LINE2</h3>
+</body>
+</html>

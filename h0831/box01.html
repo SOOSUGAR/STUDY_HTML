@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>박스의 유형</title>
+  <style>
+    div {
+      width: 100px; height: 100px;
+      padding: 10px; margin: 20px;
+    }
+    span {
+      width: 100px; height: 100px;
+      padding: 10px; margin: 20px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<!--
+ < 박스 유형 >
+ 1. 블럭 박스 : 한 줄 전체를 차지
+ 2. 인라인 박스 : 한 줄에 여러 태그를 사용할 수 있음, 속성의 일부가 무시됨
+ 3. 인라인-블럭 박스 : 인라인 박스의 성질을 가지고, 모든 속성을 사용할 수 있음
+-->
+<body>
+  <h2>박스의 유형</h2>
+  <p><div>div, hn, p태그</div>는 블럭 유형이다.</p>
+  <p><span>span태그</span>는 인라인 유형이다.</p>
+  <p>img태그 <img src="images/flower01.jpg" width="100" height="100"> 는 인라인-블럭 유형이다.</p>
+</body>
+</html>

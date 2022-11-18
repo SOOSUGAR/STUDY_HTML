@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>배경 속성 3</title>
+  <style>
+    div {
+      width: 400px;
+      padding: 40px;
+      margin: 30px;
+      border: 20px dotted darkmagenta;
+      background-color: pink;
+    }
+    .bg1 { background-clip: border-box;}
+    .bg2 { background-clip: padding-box;}
+    .bg3 { background-clip: content-box;}
+  </style>
+</head>
+<!--
+  # background-cilp 속성
+  - 박스(영역)의 크기를 결정하는 방법을 설정
+  1. border-box : 박스 모델 안에 테두리까지 모두 포함, 기본값
+  2. padding-box : 박스 모델 안에 퍼딩까지 포함(테두리는 제외)
+  3. content-box : 박스 모델 안에 내용까지 포함(테두리와 퍼딩은 제외)
+-->
+<body>
+  <div class="bg1">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eveniet et voluptas debitis adipisci repellat deserunt quod ratione voluptates, dolorum voluptatum similique fuga sit nostrum eos dicta reprehenderit velit corporis.
+  </div>
+  <div class="bg2">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam illo dolor placeat, facilis repellendus molestias veritatis error fugiat rerum provident ea pariatur cupiditate. At nemo vitae porro aliquam, incidunt ullam.
+  </div>
+  <div class="bg3">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, numquam optio? Dolor voluptatibus sequi corrupti dignissimos est, obcaecati sapiente accusamus! Veniam molestiae ab maxime aperiam doloremque! Quod recusandae autem aliquam.
+  </div>  
+</body>
+</html>

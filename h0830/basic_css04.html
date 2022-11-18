@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 선택자 2</title>
+  <style>
+    #s1 { background-color: pink; }
+    #s2 { color: green; }
+    .c1 { background-color: skyblue; }
+    .c2 { color: blue; }
+    .c3 { color: red; }
+    .c4 { background-color: gray; }
+    li { color: orange; }
+  </style>
+</head>
+<!--
+  2. 클래스(class)
+  - 태그에 클래스를 지정하여 스타일을 적용하도록 하는 것, 사용할 때는 . 을 붙여서 사용
+
+  3. 아이디와 클래스의 차이점
+  아이디 : id의 이름은 유일해야 함, 같은 태그에서 여러 아이디를 사용 불가
+  클래스 : 여러 태그에서 사용 가능하며 같은 태그에서 여러 클래스를 사용 가능
+
+  4. 스타일의 범위의 우선 순위
+  인라인 > 내부, 외부
+
+  5. 선택자의 우선 순위
+  id > class > tag
+-->
+<body>
+  <h3>HTML5 프로그래밍</h3>
+  <ol>
+    <li class="c1">HTML5</li>
+    <ul>
+      <li class="c2">하이퍼링크</li>
+      <li class="c2">입력필드</li>
+    </ul>
+    <li>CSS3</li>
+    <ul>
+      <li class="c3">선택지</li>
+      <li class="c3">스타일 속성</li>
+      <li id="s1">레이아웃</li>
+    </ul>
+    <li class="c1">Javascript</li>
+    <ul>
+      <li id="s1">동적 내용</li>
+      <li id="s2" class="c4">프레임워크</li>
+    </ul>
+  </ol>
+</body>
+</html>

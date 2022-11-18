@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>선택자 7</title>
+  <style>
+    #container {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    p:only-child{color: red;}
+    h2:only-of-type{background-color: skyblue;}
+  </style>
+</head>
+<!-- 
+  :only-child - 부모 안에 자식이 오직 하나일 때, 스타일 적용 (다른 요소가 있으면 안됨)
+  :only-of-type - 전체에서 해당 요소가 오직 하나일 때 스타일 적용 (다른 요소랑 상관 없음)
+ -->
+<body>
+  <div id="container">
+    <div id="menu1">
+      <p>HTML</p>
+      <h1>CSS</h1>
+      <!-- <p>CSS</p> -->
+    </div>
+    <hr>
+    <div id="menu2">
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <h2>JavaScript</h2>
+      <p>JQuery</p>
+    </div>
+    <hr>
+    <h2>h2 태그 추가</h2>
+  </div>
+</body>
+</html>

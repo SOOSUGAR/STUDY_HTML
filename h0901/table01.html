@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 1</title>
+  <style>
+    table {
+      width: 300px;
+      border: 1px solid black;
+    }
+    tr { height: 100px;}
+    th, td { 
+      border: 1px solid black;
+      
+      /* 표의 셀 안에서 수평(좌우) 위치, 기본값 : left */
+      text-align: center;
+      /* 표의 셀 안에서 수직(상하) 위치, 기본값 : center */
+      vertical-align: center;
+    }
+  </style>
+</head>
+<!--
+  < 테이블 속성 >
+  1. text-align : 셀 안에서 수평 위치
+  2. vertical-align : 셀 안에서 수직 위치
+  - 표에서만 사용 가능
+-->
+<body>
+  <h3>9월 1일 프로야구 경기 일정</h3>
+  <table>
+    <caption>9월 1일 경기 일정</caption>
+    <tr>
+      <th width="40%">구장</th>
+      <th width="60%">경기</th>
+    </tr>
+    <tr>
+      <td>고척</td>
+      <td>한화 vs 키움</td>
+    </tr>
+    <tr>
+      <td>수원</td>
+      <td>LG vs KT</td>
+    </tr>
+    <tr>
+      <td>잠실</td>
+      <td>롯데 vs 두산</td>
+    </tr>
+    <tr>
+      <td>문학</td>
+      <td>NC vs SSG</td>
+    </tr>
+    <tr>
+      <td>광주</td>
+      <td>삼성 vs KIA</td>
+    </tr>
+  </table>
+</body>
+</html>

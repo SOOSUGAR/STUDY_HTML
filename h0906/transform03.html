@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>transform 3</title>
+  <style>
+    .origin {
+      display: inline-block;
+      margin: 50px;
+      border: 1px solid black;
+    }
+    .origin img { transform: rotateZ(10deg); }
+    .rose1 { transform-origin: center; } /* 기본값 */
+    .rose2 { transform-origin: left top; }
+    .rose3 { transform-origin: right top;}
+    .rose4 { transform-origin: left bottom;}
+    .rose5 { transform-origin: right bottom;}
+  </style>
+</head>
+<!--
+  # transform-origin 속성 - 회전의 기준점을 변경
+  - center(중심, 기본값), left, right, top, bottom
+-->
+<body>
+  <div class="origin">
+    <img src="images/rose.jpg" class="rose1">
+  </div>
+  <div class="origin">
+    <img src="images/rose.jpg" class="rose2">
+  </div>
+  <div class="origin">
+    <img src="images/rose.jpg" class="rose3">
+  </div>
+  <div class="origin">
+    <img src="images/rose.jpg" class="rose4">
+  </div>
+  <div class="origin">
+    <img src="images/rose.jpg" class="rose5">
+  </div>
+</body>
+</html>

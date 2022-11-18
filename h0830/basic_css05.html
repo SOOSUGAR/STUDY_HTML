@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 선택자 3</title>
+  <style>
+    h1 { background-color: orange; }
+
+    /* 가상 클래스 */
+    h1:hover { background-color: black; color: white;}
+    h1:active { background-color: yellow; color: red;}
+    li:first-child { color: red; }
+    li:last-child { color: blue; }
+    li:nth-child(2) { color: orange; }
+
+    /* 가상 요소 */
+    p::first-letter { color: red; font-size: 50px; font-weight: bold;}
+    p::first-line { background-color: gold;}
+    h1::before { content: "HTML은 웹의 기본"; font-size: small;}
+    h1::after { content: "CSS는 웹의 응용"; font-size: small; color: red; }
+  </style>
+</head>
+<!--
+  6. 가상 클래스
+  - hover : 마우스를 올렸을 때 스타일이 적용되도록 하는 것
+  - active : 클릭했을 때 스타일이 적용되도록 하는 것
+
+  7. 가상 요소
+  - first-letter : 문단에서 첫 번째 글자에만 스타일이 적용도록 하는 선택자
+  - first-line : 문단에서 첫 번째 라인에만 스타일이 적용되도록 하는 선택자
+-->
+<body>
+  <h1>HTML5 프로그래밍</h1>
+  <hr>
+  <p>
+    HTML5 웹그로그래밍에서는 HTML5, CSS3, Javascript를 공부합니다. <br>
+    가상 클래스와 가상 요소에 대해서 공부하고 있습니다.
+  </p>
+  <hr>
+  <ul>
+    <li>웹 서버 설치</li>
+    <li>HTML5 문서 작성하기</li>
+    <li>CSS3 문서 작성하기</li>
+    <li>Javascript 프로그래밍</li>
+    <li>JQuery 프로그래밍</li>
+  </ul>
+</body>
+</html>

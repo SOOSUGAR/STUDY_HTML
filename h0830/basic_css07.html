@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가상 클래스와 가상 요소 3</title>
+  <style>
+    #container {
+      width: 500px;
+      margin: 0 auto;
+    }
+    h1 { text-align: center; }
+
+    input:focus { background-color: lightgray; }
+    input:checked + label { color: red; }
+  </style>
+</head>
+<!--
+  # 가상 클래스
+  - focus : 커서가 활성화된 상태일 때 적용
+  - checked : 체크되었을 때 적용
+
+
+  # + 선택자 : 인접하는 요소를 선택
+-->
+<body>
+  <div id="container">
+    <h1>2학기 수강 과목 신청</h1>
+      <fieldset>
+        <legend>학생 정보</legend>
+        <label for="sno">학번 : </label><input type="text" name="sno" id="sno">
+        <label for="sname">이름 : </label><input type="text" name="sname" id="sname">
+      </fieldset><br>
+      <fieldset>
+        <legend>신청과목</legend>
+        <p>2학기에 신청할 과목을 선택하시오.</p>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">JAVA</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">HTML5</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">Javascript</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">JSP</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">Oracle</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">Spring</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">자료구조</label><br>
+        <input type="checkbox" name="subjects" id="s1"><label for="s1">컴퓨터구조</label><br>
+      </fieldset>
+  </div>
+</body>
+</html>

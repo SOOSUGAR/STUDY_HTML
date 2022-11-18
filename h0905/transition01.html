@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>트랜지션 1</title>
+  <style>
+    div { width: 200px; height: 200px; margin: 20px;}
+    .b1 {
+      background-color: cyan;
+      /* 1. 각각 설정 */
+      /* transition-property: background-color;
+      transition-duration: 5s;
+      transition-delay: 1s; */
+      /* 2. 한꺼번에 설정 */
+      transition: background-color 5s 1s;
+    }
+    .b1:hover {background-color: darkgoldenrod;}
+    .b2 {
+      background-color: magenta;
+      transition-property: border-radius;
+      transition-duration: 3s;
+      transition-delay: 1s;
+    }
+    .b2:hover {border-radius: 50%;}
+  </style>
+</head>
+<!-- 
+  < 트랜지션 효과 >
+  1. transition : 시간에 따라 크기, 색상 등의 스타일 속성이 변환하도록 하는 것
+  2. transition의 속성 : 진행 시간(duration), 지연시간(delay)
+ -->
+<body>
+  <div class="b1"></div>
+  <div class="b2"></div>
+</body>
+</html>

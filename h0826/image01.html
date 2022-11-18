@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>이미지 태그</title>
+  </head>
+  <!--
+    < 이미지 태그 >
+    1. img 태그 : 
+    2. 속성 : src(이미지의 위치), alt(대체 텍스트->이미지가 없을 때)
+              width(가로 길이), heigth(세로 길이)
+    3. img 태그에서 사용 가능한 이미지 파일
+    - png, jpg, gif 파일, ex) bmp 파일은 사용 불가
+
+    < 경로 지정 방법 >
+    1. 상대 경로 : 현재 html 파일로부터 상대적인 위치
+    - .(현재 위치), ..(상위 위치), /(하위 위치)
+    - 웹에서는 대부분 상대 경로를 사용함
+    2. 절대 경로 : 해당 드라이브 위치로부터 찾는 절대적인 위치
+    - 웹에서는 절대 경로를 거의 사용하지 않음 
+
+    < 줄바꿈과 크기 속성에 따른 태그의 구분 >
+    1. 블럭 속성을 가지는 태그
+
+    2. 인라인 속성을 가지는 태그
+
+    3.
+  -->
+  <body>
+    <h2>이미지 태그</h2>
+    <h3>1. 이미지 태그 경로 지정</h3>
+    <img src="html5.PNG" alt="">
+    <img src="html4.PNG" alt="이미지 없음">
+    <img src="html5.PNG" alt="" width="50">
+    <img src="html5.PNG" alt="" height="50">
+    <img src="html5.PNG" alt="" width="50" height="60">
+    <h3>2. 경로 지정</h3>
+    <h4>상대 경로</h4>
+    <img src="images/css.PNG" alt=""> <!-- 현재 위치 -->
+    <img src="./images/css.PNG" alt=""> <!-- 현재 위치 -->
+    <img src="../imgs/js.PNG" alt=""> <!-- 상위 위치 -->
+    <h4>절대 경로</h4>
+    <img src="d:/aws220726/html0825/h0826/images/www.PNG" alt="">
+  </body>
+</html>

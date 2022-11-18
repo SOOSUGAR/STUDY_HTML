@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>animation 4</title>
+  <style>
+    .box {
+      width: 100px; height: 100px;
+      margin: 100px;
+      border: 1px solid black;
+    }
+    .b1 {
+      animation-name: b1;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-iteration-count: 5;
+    }
+    .b2 {
+      animation: b2 3s 1s 5 ease-in-out;
+    }
+
+    @keyframes b1 {
+      from { 
+        background-color: blue;
+       }
+       to {
+        background-color: cyan;
+        border: 2px solid blue;
+        border-radius: 50%;
+       }
+    }
+    @keyframes b2 {
+      from { 
+        background-color: blue;
+       }
+       to {
+        background-color: cyan;
+        border: 2px solid blue;
+        border-radius: 50%;
+        transition-duration: 20s;
+       }
+    }
+  </style>
+</head>
+<!--
+  문제) 아래의 조건에 해당하는 keyframes, animation 속성을 설정하시오.
+  배경색은 blue에서 cyan으로 변경, 테두리는 2px 실선 blue,
+  정원으로 바뀌는 애니메이션을 아래의 박스에 적용하시오
+  지속시간 3초, 지연시간 1초, 반복횟수 5번 천천히 시작하여 천천히 끝내도록 애니메이션을 지정하시오.
+
+  - b1 : animation의 속성을 각각 설정
+  - b2 : animation의 속성을 한꺼번에 설정
+-->
+<body>
+  <div class="box b1"></div>
+  <div class="box b2"></div>
+</body>
+</html>

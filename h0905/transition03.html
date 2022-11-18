@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>트랜지션 3</title>
+  <style>
+    div { 
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      border: 1px solid black;
+      margin: 100px;
+
+      /* 1. 각각 설정  */
+      /* transition-property: width, height;
+      transition-duration: 5s;
+      transition-delay: 1s; */
+      /* 2. 한번에 설정 */
+      transition: all 3s 1s;
+    }
+
+    .b1:hover {width: 200px; height: 200px;}
+
+    .b2 {
+      background-color: darkorange;
+      border: 1px solid red;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100px;
+      /* 1. 각각 설정 */
+      /* 각 속성 변화의 진행시간이 다를 때에는 각각 설정해야한다. */
+      transition-property: background-color, width, height, transform;
+      transition-duration: 2s,3s,4s,5s;
+    }
+
+    .b2:hover {
+      background-color: crimson;
+      width: 200px;
+      height: 200px;
+      transform: rotate(75deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="b1"></div>
+  <div class="b2">박스</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>박스 크기 설정</title>
+  <style>
+    div {
+      margin: 10px;
+      padding: 10px;
+      border: 5px solid gray;
+      color: white;
+    }
+    .b1 { 
+      background-color: royalblue;
+      box-sizing: border-box;
+      width: 200px;
+      height: 100px;
+    }
+    .b2 { 
+      background-color: crimson;
+      width: 200px; height: 100px;
+      box-sizing: content-box;
+    }
+    .b3 { 
+      background-color: darksalmon;
+      width: 200px; height: 100px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<!--
+  # 전체 레이아웃의 크기 : box + margin
+  # 박스의 크기 : border + padding + content
+  # box-sizing : 박스 크기를 지정하는 속성
+  1. content-box 
+  - width, height에 추가로 padding, border의 크기를 더하는 방법
+  - 패딩과 테두리 크기에 따라 전체 크기가 더 커질 수 있다
+
+  2. border-box
+  - width, height의 크기 안에 padding border의 크기가 포함되는 방법
+  - 패딩과 테두리의 크기가 커져도 전체 크기는 변하지 않음
+  - 패딩과 테두리의 크기가 커지면 내용의 크기가 작아짐
+-->
+<body>
+  <div class="b1">BOX1</div>
+  <div class="b2`">BOX2</div>
+  <div class="b3`">BOX3</div>
+</body>
+</html>

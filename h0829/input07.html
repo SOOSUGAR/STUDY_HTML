@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>입력태그 7</title>
+</head>
+<!--
+  7. select 태그
+  - 선택 박스를 펼쳐서 여러 개 항목 중에서 1개 또는 여러 개를 선택할 수 있도록 하는 태그
+  - selected : 기본값으로 선택
+  - size 속성 : 한 번에 보여줄 항목의 개수
+  - mulitple : 여러 개를 선택하는 선택박스 사용
+
+-->
+<body>
+  <h2>7. select 태그</h2>
+
+  <form action="" method="post">
+    회원님의 국정과 여행한 국가를 선택하시오.<br>
+    국적: 
+    <select name="country" size="3">
+      <option value="France">프랑스</option>
+      <option value="Korea" selected>대한민국</option>
+      <option value="USA">미국</option>
+      <option value="Germany">독일</option>
+      <option value="England">영국</option>
+    </select><br>
+    여행한 도시:
+    <select name="city" size="5" multiple>
+      <option value="">서울</option>
+      <option value="">파리</option>
+      <option value="">뉴욕</option>
+      <option value="">런던</option>
+      <option value="">헬싱키</option>
+      <option value="">베를린</option>
+      <option value="">로마</option>
+    </select><br><br>
+    <input type="submit" value="데이터 전송">
+  </form>
+</body>
+</html>

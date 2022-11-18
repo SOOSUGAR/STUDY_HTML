@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!--
+     웹페이지의 뷰포트 설정
+     - 뷰포트의 너비를 스마트폰 화면 너비에 맞추고, 초기 화면 비율을 1로 지정
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>responsive web</title>
+  <style>
+    /* 공통 */
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    * { margin: 0; padding: 0; }
+    body { 
+      background-color: rgba(255, 255, 255, 0.829);
+      font-family: 'Nanum Gothic', sans-serif;
+     }
+     a { text-decoration: none; color: #fff; }
+     a:active { color: yellow; }
+     h1 { font-size: 1.8em; }
+     h2 { font-size: 1.3em; }
+     p { font-size: 1.3em; line-height: 2.5em; font-weight: bold;}
+     li { font-size: 1em; line-height: 2em; font-weight: bold;}
+
+     /* 모바일 크기 - 767px 이하 */
+     #container { 
+      width: 100%;
+      margin: 0 auto; 
+    }
+    header {
+      width: 100%; height: 300px;
+      margin: 0;
+      background: url("images/header.jpg")
+      no-repeat center;
+      background-size: cover;
+    }
+    nav { 
+      height: 50px;
+      background-color: black;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0; padding: 10px;
+      text-align: center;
+    }
+    nav ul li { 
+      display: inline-block;
+      margin: 5px 15px;
+      font-size: 0.9em;
+    }
+    section {
+      position: relative;
+      width: 100%;
+      padding: 15px 5% 10px 5%;
+    }
+    section:nth-child(3) {
+      background-color: #eee;
+    }
+    .s_title { 
+      position: absolute;
+      top: 20px; left: 0;
+      padding: 30px 50px;
+    }
+    .s_content {
+      box-sizing: border-box;
+      width: 90%;
+      margin: 80px auto 10px;
+      padding: 20px;
+    }
+    .photo { display: none; }
+    .s_content ol { margin-top: 20px;}
+    footer { 
+      width: 100%; height: 100px;
+      background-color: #000;
+      text-align: center;
+      font-style: italic;
+    }
+    footer p {
+      color: #fff;
+      line-height: 100px;
+      font-style: italic;
+    }
+     /* 태블릿 크기 - 768px 이상 */
+     @media screen and (min-width: 768px) {
+      header { height: 400px; }
+      #intro, #map {
+        box-sizing: border-box;
+        width: 50%; height: 400px;
+        float: left;
+        margin: 0;
+        border: 1px dotted #ccc;
+      }
+      #choice { clear: both;}
+    }
+
+     /* PC, 노트북 크기 - 992px 이상 */
+     @media screen and (min-width: 992px) {
+      #container {
+        width: 992px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+      }
+      header { height: 500px;}
+     #intro, #map, #choice {
+      box-sizing: border-box;
+      position: relative;
+      width: 100%; height: 400px;
+      padding: 15px 5% 10px 5%;
+     }
+     .photo { display: inline-block; width: 50%; }
+     .text { float: right; width: 42%; margin-right: 8%;}
+     #choice .photo img { 
+      float: right; border-radius: 50%; margin-bottom: 30px;
+     }
+     #choice .text {
+      float: left;
+     }
+     footer { clear: both;}
+    }
+  </style>
+</head>
+<!--
+  < 반응형 웹 >
+  - responsive web
+  1. 모든 스마트 기기에서 접속 가능 -> css를 조절하여 화면 크기에 맞추어서 자유롭게 반응하는 웹
+  2. 웹만으로 모든 것이 관리 가능, 유지 및 관리가 용이
+
+  < viewport(뷰포트) >
+  - 접속한 기기에 맞추어 화면을 확대/축소하여 표시하는 기능
+  - 뷰포트는 스마트폰에서 실제 화면이 표시되는 영역
+
+  < media queries(미디어 쿼리) >
+  - 접속하는 장치에 따라 특정한 css 스타일을 사용하도록 하는 속성
+  - min-width: 최소 너비, max-width: 최대 너비
+
+  참고 사이트
+  mediaqueri.es
+-->
+<body>
+  <div id="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#intro">카페 소개</a></li>
+          <li><a href="#map">오시는 길</a></li>
+          <li><a href="#choice">이 달의 추천</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="intro">
+      <div class="s_title"><h1>카페 소개</h1></div>
+      <div class="s_content">
+        <div class="photo"><img src="images/coffee.jpg"></div>
+        <div class="text">
+          <p>영업 시간 : 오전 9시 ~ 밤 10시</p>
+          <p>휴무 : 매주 수요일</p>
+          <p><i><small><small>(수요일이 공휴일일 경우 수요일 영업, 다음날 휴무)</small></small></i></p>
+        </div>
+      </div>
+    </section>
+    <section id="map">
+      <div class="s_title"><h1>오시는 길</h1></div>
+      <div class="s_content">
+        <div class="photo"><img src="images/map.jpg"></div>
+        <div>
+          <p>서귀포시 안덕면 사계리 oooo-ooo</p>
+          <p>제주 올레 10코스 산방산 근처</p>
+        </div>
+      </div>
+    </section>
+    <section id="choice">
+      <div class="s_title"><h1>이 달의 추천</h1></div>
+      <div class="s_content">
+        <div class="photo"><img src="images/ice.jpg"></div>
+        <div class="text">
+          <h2>핸드드립 아이스커피</h2>
+          <ol>
+            <li>1인분 기준으로 서버에 각얼음 5조각(한 조각에 20cc)을 넣고 추출을 시작한다.</li>
+            <li>평상시보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</li>
+            <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>My Times With Coffee</p>
+    </footer>
+  </div>
+</body>
+</html>

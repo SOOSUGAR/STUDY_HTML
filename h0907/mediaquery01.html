@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미디어 쿼리 1</title>
+  <style>
+    /* 미디어 쿼리에 따라 이미지를 다르게 설정 */
+    body { 
+      background: url("images/bg0.jpg") no-repeat fixed;
+      background-size: cover;
+    }
+    /* PC */
+    @media screen and (max-width:1024px) {
+      body {
+        background: url("images/bg1.jpg") no-repeat fixed;
+        background-size: cover;
+      }
+
+    /* 태블릿 */
+    @media screen and (max-width:768px) {
+      body {
+        background: url("images/bg2.jpg") no-repeat fixed;
+        background-size: cover;
+      }
+    }
+
+    /* 스마트폰 */
+    @media screen and (max-width:420px) {
+      body {
+        background: url("images/bg3.jpg") no-repeat fixed;
+        background-size: cover;
+      }
+    }
+
+    }
+  </style>
+</head>
+<!--
+  < 미디어 쿼리, Media Queries >
+  - CSS3의 속성으로 사이트에 접속하는 장치에 따라 특정한 CSS 스타일을 사용하도록 하는 속성
+  - 미디어 쿼리를 사용하면 접속하는 장치의 화면 크기에 따라 레이아웃이 다르게 표현
+
+  1. 미디어 쿼리의 기본 구문
+  @media screen and (min-width:200px) and (max-width:360px)
+
+  - @media : 미디어 쿼리 사용
+  - screen : 미디어 유형, PC, 노트북, 태블릿, 스마트폰에 해당하는 유형
+  ---- tv , print, projection ....
+  - and : 조건을 연결하는 연산자, 모든 조건을 만족
+  ---- , (열거), only(미디어 쿼리를 지원하는 브라우저에서만 조건을 인식) 
+  ---- not(다음에 나오는 미디어 유형은 제외)
+  - width, height, min-width, max-width, max-height
+  ---- 주로 min-width, max-width를 사용
+
+-->
+<body>
+  
+</body>
+</html>

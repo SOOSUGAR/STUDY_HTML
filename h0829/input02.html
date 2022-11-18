@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>입력 태그 2</title>
+</head>
+<!--
+  < 입력 태그 속성 >
+  - name 속성 : 데이터를 전달할 때 값을 얻을 수 있는 속성
+  - value 속성 : 값을 지정
+  - size 속성 : 크기, 입력할 수 있는 문자 수, 기본값 20
+  - maxlength : 최대 입력 가능 문자수를 지정, 글자수를 넘어서면 입력 불가
+  - placeholder : 입력 힌트를 보여줌
+  - readonly : 읽기만 가능, 변경은 불가
+
+  1. text : 텍스트 필드
+  - 일반적인 텍스트를 입력할 때 사용
+  2. password : 비밀번호
+  - 입력부분을 기호로 표시
+
+-->
+<body>
+  <h2>1. 텍스트 입력 태그</h2>
+
+  <h1>로그인 화면</h1>
+  <form action="" method="POST">
+    아이디: <input type="text" name="userId" size="30" placeholder="ID 입력"><br>
+    비밀번호: <input type="password" name="pwd" size="30" maxlength="15" readonly><br>
+    <input type="submit" value="로그인"> <input type="reset" value="입력 취소">
+  </form>
+
+</body>
+</html>

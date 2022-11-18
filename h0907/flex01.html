@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>플렉스 박스 레이아웃 1</title>
+  <style>
+    #container {
+      width: 600px; height: 600px;
+      margin: 150px auto;
+      border: 2px solid black;
+      /* 1. flex box layout */
+      display: flex;
+
+      /* 2. 항목의 배치 방향 */
+      /* flex-direction: row; */
+      /* flex-direction: column; */
+      /* flex-direction: row-reverse; */
+
+      /* 3. 항목의 줄바꿈 */
+      /* flex-wrap: nowrap; */
+      /* flex-wrap: wrap; */
+      /* flex-wrap: wrap-reverse; */
+
+      /* 4. 항목의 배치 방향과 줄바꿈을 한꺼번에 설정 */
+      flex-flow: column wrap;
+    }
+
+    .box { 
+      width: 100px; height: 100px;
+      background-color: gray;
+      border: 2px solid black;
+    }
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 76px;
+    }
+  </style>
+</head>
+<!--
+  < 플렉스 박스 레이아웃 >
+  - flex box layout
+  - 미디어 쿼리를 사용하여 반응형 웹을 만들면 웹이 복잡해질수록 배치가 힘듦
+  - 이러한 미디어 쿼리의 문제점을 해결하고자 만든 레이아웃 방법
+  - 그리드 레이아웃을 기본으로 하여 플렉스 박스를 원하는 위치에 배치하는 방법
+  - 따라서, 화면 크기에 따라 다른 레이아웃을 사용하거나 크기를 조절할 때 편리하게 사용 가능
+
+  < 플렉스 박스 레이아웃의 기본 용어 >
+  1. 플렉스 박스 컨테이너
+  - 플렉스 박스를 담아서 배치하는 공간
+  2. 플렉스 항목
+  - 플렉스 박스 컨테이너 안에서 사용하는 요소(항목)
+  3. 주축(main axis)
+  - 플렉스 박스 컨테이너에서 플렉스 항목이 배치되는 기본 방향
+  - 기본값 : 가로(왼쪽->오른쪽)
+  4. 교차축(cross axis)
+  - 주축과 교차가 되는 축
+  - 기본값 : 세로(위->아래)
+
+  < 플렉스 박스 속성 >
+  1. display 속성
+  - flex 또는 inline-flex를 사용하면 항목을 주축 안에 모두 표현
+  - flex : 플렉스 박스를 블럭 요소로 설정
+  - inline-flex : 플렉스 박스를 인라인 요소로 설정
+  2. flex-direction 속성
+  - 주축과 교차축, 플렉스 항목의 배치 방향을 변경
+  - row : 기본값, 주축이 가로 방향, 왼쪽에서 오른쪽으로 배치
+  - row-reverse : 주축이 가로 방향, 오른쪽에서 왼쪽으로 배치
+  - column : 주축이 세로 방향, 위에서 아래로 배치
+  - column-reverse : 주축이 세로 방향, 아래에서 위로 배치
+  3. flex-wrap 속성
+  - 항목을 주축 안에 모두 배치할지, 줄을 바꿔서 배치하는지의 속성
+  - nowrap : 기본값, 주축안에 모든 항목을 배치
+  - wrap : 항목이 넘치면 줄을 바꿔서 배치
+  - wrap-reverse : 항목이 넘치면 줄과 교차죽을 바꿔서 배치
+
+-->
+<body>
+  <div id="container">
+    <div class="box b1"><h1>BOX1</h1></div>
+    <div class="box b2"><h1>BOX2</h1></div>
+    <div class="box b3"><h1>BOX3</h1></div>
+    <div class="box b4"><h1>BOX4</h1></div>
+    <div class="box b5"><h1>BOX5</h1></div>
+    <div class="box b6"><h1>BOX6</h1></div>
+    <div class="box b6"><h1>BOX7</h1></div>
+  </div>
+</body>
+</html>

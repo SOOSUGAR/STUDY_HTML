@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 2</title>
+  <style>
+    table {
+      width: 600px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr { height: 40px; }
+    th, td { border: 1px solid black;}
+
+    .tr_first { background: linear-gradient(to bottom, white, yellow);}
+    .tr_firstm .tr_last { 
+      border-top: double;
+      border-bottom: double;
+     }
+     .col_first {
+      border-left: hidden;
+      border-right: double;
+     }
+     .col_last {
+      border-left: double;
+      border-right: hidden;
+     }
+  </style>
+</head>
+<!--
+
+-->
+<body>
+  <table>
+    <caption>요안도라 객식</caption>
+    <colgroup>
+      <col class="col_first">
+      <col>
+      <col>
+      <col class="col_last">
+    </colgroup>
+    <tr class="tr_first"> 
+      <th width="20%">방 이름</th>
+      <th width="30%">대상</th>
+      <th width="20%">크키</th>
+      <th width="30%">가격</th>
+    </tr>
+    <tr>
+      <th>유채방</th>
+      <td>여성 도미토리</td>
+      <td rowspan="3">4인실</td>
+      <td rowspan="4">1인 20,000원</td>
+    </tr>
+    <tr>
+      <th rowspan="2">동백방</th>
+      <td>동성 도미토리</td>
+    </tr>
+    <tr>
+      <td>가족 1팀</td>
+    </tr>
+    <tr>
+      <th>천혜향방</th>
+      <td>-</td>
+      <td>2인실</td>
+    </tr>
+    <tr class="tr_last">
+      <th colspan="4">바깥채 전체를 렌트합니다.</th>
+    </tr>
+  </table>
+</body>
+</html>

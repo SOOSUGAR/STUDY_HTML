@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 3</title>
+  <style>
+    table {
+      width : 600px;
+      border : 1px solid black;
+      border-collapse : collapse;
+    }
+    tr { height : 30px; }
+    th, td { 
+      border : 1px solid black;
+      text-align: center;
+    }
+    thead, tfoot { background-color: rgb(201, 230, 248);}
+    tbody { background-color:azure}
+  </style>
+</head>
+<!--
+  1. 시맨틱(semantic) 태그 - 특별한 기능이 있는 것이 아닌, 의미를 가지는 태그
+  2. 테이블에서 사용하는 시맨틱 태그
+  - thead : 테이블의 제목
+  - tboby : 테이블의 본문
+  - tfoot : 테이블의 끝말
+
+-->
+<body>
+  <table border="1">
+    <caption>요안도라 객실</caption>
+    <thead>
+      <tr>
+        <td width="15%">방 이름</td>
+        <td>대상</td>
+        <td width="15%">크기</td>
+        <td>가격</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>유채방</td>
+        <td>여성 도미토리</td>
+        <td rowspan="3">4인실</td>
+        <td rowspan="4">1인 20,000원</td>r
+      </tr>
+      <tr>
+        <td rowspan="2">동백방</td>
+        <td>동성 도미토리</td>
+      </tr>
+      <tr>
+        <td>가족 1팀</td>
+      </tr>
+      <tr>
+        <td>천혜향방</td>
+        <td>-</td>
+        <td>2인실</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">바깥채 전체를 렌트합니다.</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
